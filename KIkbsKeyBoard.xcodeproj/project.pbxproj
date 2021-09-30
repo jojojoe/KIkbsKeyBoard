@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C50FEC780FA3DBA714FEBDF6 /* Pods_KIkkKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */; };
+		CD16FE86E616849F44F724AF /* Pods_KIkbsKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */; };
+		EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */; };
+		EB4E385B26CB9F2D00D1FE4D /* ConfigTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */; };
+		EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */; };
+		EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */; };
+		EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */; };
+		EB7A2B7726C4D7DB00F25D38 /* KIkbsMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */; };
+		EB7A2B7B26C4D81000F25D38 /* TEST.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7A26C4D81000F25D38 /* TEST.m */; };
+		EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */; };
+		EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */; };
+		EB7A2B8226C4FF3900F25D38 /* ExtensionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */; };
+		EB7A2B8B26C5029800F25D38 /* KeyBTopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8526C5029700F25D38 /* KeyBTopMenuBar.swift */; };
+		EB7A2B8C26C5029800F25D38 /* KeyBCoinLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8626C5029700F25D38 /* KeyBCoinLockView.swift */; };
+		EB7A2B8D26C5029800F25D38 /* KeyBStuffFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8726C5029800F25D38 /* KeyBStuffFontView.swift */; };
+		EB7A2B8E26C5029800F25D38 /* KeyBStuffTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8826C5029800F25D38 /* KeyBStuffTagView.swift */; };
+		EB7A2B8F26C5029800F25D38 /* KeyBStuffFuHaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8926C5029800F25D38 /* KeyBStuffFuHaoView.swift */; };
+		EB7A2B9026C5029800F25D38 /* KeyBTopFontSelectBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8A26C5029800F25D38 /* KeyBTopFontSelectBar.swift */; };
+		EB7A2B9626C502B900F25D38 /* KeyBTag.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9226C502B900F25D38 /* KeyBTag.json */; };
+		EB7A2B9726C502B900F25D38 /* KeyBStuffDataMana.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */; };
+		EB7A2B9826C502B900F25D38 /* KeyBCoinManaswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9426C502B900F25D38 /* KeyBCoinManaswift.swift */; };
+		EB7A2B9926C502B900F25D38 /* KeyBFuHao.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */; };
+		EB7A2B9F26C502E300F25D38 /* KeyBstyleList.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */; };
+		EB7A2BA026C502E300F25D38 /* KBKeyBtnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */; };
+		EB7A2BA126C502E300F25D38 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */; };
+		EB7A2BA226C502E300F25D38 /* KeyBKeyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */; };
+		EB88FDE226D37FD7005BD007 /* LLMorseCodeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */; };
+		EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */; };
+		EB88FE4526D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */; };
+		EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */; };
+		EB8CD38526DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */; };
+		EB9407CC26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9407CB26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift */; };
+		EB9407CE26F3819400CB4A66 /* textTransform_Font.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CD26F3819400CB4A66 /* textTransform_Font.json */; };
+		EB9407D026F381C300CB4A66 /* textTransform_LeftAdd.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */; };
+		EB9407D226F381DF00CB4A66 /* textTransform_Zalgo.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */; };
+		EB960C4A26DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */; };
+		EB960C4C26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */; };
+		EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */; };
+		EB960C5026DF793D00EDB86A /* KIkbsCardThemeColorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4F26DF793D00EDB86A /* KIkbsCardThemeColorBar.swift */; };
+		EB960C5226DFCF4D00EDB86A /* textCardThemeColor.json in Resources */ = {isa = PBXBuildFile; fileRef = EB960C5126DFCF4D00EDB86A /* textCardThemeColor.json */; };
+		EB960C5426DFD1AA00EDB86A /* textCardOverlayerImg.json in Resources */ = {isa = PBXBuildFile; fileRef = EB960C5326DFD1AA00EDB86A /* textCardOverlayerImg.json */; };
+		EB99D90426D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */; };
+		EB9F2E8C26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */; };
+		EBA03FA526E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */; };
+		EBA03FA726E5C51600BE0043 /* KIkbsCardTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */; };
+		EBA4E96226D52C8700E58274 /* KIkbsSpecialTextLibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */; };
+		EBABA52926D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */; };
+		EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */; };
+		EBABA53126D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */; };
+		EBAE32A026D7875500FFC212 /* KIkbsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */; };
+		EBAE32A226D78E8600FFC212 /* specialSymbolList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A126D78E8600FFC212 /* specialSymbolList.json */; };
+		EBAE32A426D78E9100FFC212 /* specialQuoteList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A326D78E9100FFC212 /* specialQuoteList.json */; };
+		EBAE32A626D78E9C00FFC212 /* specialEmojiStrList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */; };
+		EBAE32AA26D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */; };
+		EBF8BCBC268EC32700DA318F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBB268EC32700DA318F /* AppDelegate.swift */; };
+		EBF8BCBE268EC32700DA318F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBD268EC32700DA318F /* SceneDelegate.swift */; };
+		EBF8BCC0268EC32700DA318F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBF268EC32700DA318F /* ViewController.swift */; };
+		EBF8BCC3268EC32700DA318F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC1268EC32700DA318F /* Main.storyboard */; };
+		EBF8BCC5268EC32D00DA318F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC4268EC32D00DA318F /* Assets.xcassets */; };
+		EBF8BCC8268EC32D00DA318F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC6268EC32D00DA318F /* LaunchScreen.storyboard */; };
+		EBF8BCD6268ECD2400DA318F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */; };
+		EBF8BCDA268ECD2400DA318F /* KIkkKeyBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF8BCD8268ECD2400DA318F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF8BCB0268EC32700DA318F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF8BCD2268ECD2400DA318F;
+			remoteInfo = KIkkKeyBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBF8BCDE268ECD2400DA318F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBF8BCDA268ECD2400DA318F /* KIkkKeyBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkkKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-KIkkKeyBoard/Pods-KIkkKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkkKeyBoard.debug.xcconfig"; path = "Target Support Files/Pods-KIkkKeyBoard/Pods-KIkkKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIkkKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F369BAF95FF4BD37AED85C /* Pods-KIkbsKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkbsKeyBoard.debug.xcconfig"; path = "Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		C8370BC81A35FDD9377060E3 /* Pods-KIkbsKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkbsKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIkbsKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalgoStringMaker.swift; sourceTree = "<group>"; };
+		EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTool.swift; sourceTree = "<group>"; };
+		EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainToolBarBtn.swift; sourceTree = "<group>"; };
+		EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTransformVC.swift; sourceTree = "<group>"; };
+		EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTypeTransformView.swift; sourceTree = "<group>"; };
+		EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainVC.swift; sourceTree = "<group>"; };
+		EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkbsKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB7A2B7926C4D81000F25D38 /* TEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEST.h; sourceTree = "<group>"; };
+		EB7A2B7A26C4D81000F25D38 /* TEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST.m; sourceTree = "<group>"; };
+		EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSettingVC.swift; sourceTree = "<group>"; };
+		EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsStoreVC.swift; sourceTree = "<group>"; };
+		EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTool.swift; sourceTree = "<group>"; };
+		EB7A2B8526C5029700F25D38 /* KeyBTopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBTopMenuBar.swift; sourceTree = "<group>"; };
+		EB7A2B8626C5029700F25D38 /* KeyBCoinLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBCoinLockView.swift; sourceTree = "<group>"; };
+		EB7A2B8726C5029800F25D38 /* KeyBStuffFontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBStuffFontView.swift; sourceTree = "<group>"; };
+		EB7A2B8826C5029800F25D38 /* KeyBStuffTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBStuffTagView.swift; sourceTree = "<group>"; };
+		EB7A2B8926C5029800F25D38 /* KeyBStuffFuHaoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBStuffFuHaoView.swift; sourceTree = "<group>"; };
+		EB7A2B8A26C5029800F25D38 /* KeyBTopFontSelectBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBTopFontSelectBar.swift; sourceTree = "<group>"; };
+		EB7A2B9226C502B900F25D38 /* KeyBTag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBTag.json; sourceTree = "<group>"; };
+		EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBStuffDataMana.swift; sourceTree = "<group>"; };
+		EB7A2B9426C502B900F25D38 /* KeyBCoinManaswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBCoinManaswift.swift; sourceTree = "<group>"; };
+		EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBFuHao.json; sourceTree = "<group>"; };
+		EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBstyleList.json; sourceTree = "<group>"; };
+		EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBKeyBtnManager.swift; sourceTree = "<group>"; };
+		EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBKeyBtn.swift; sourceTree = "<group>"; };
+		EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMorseCodeTranslator.swift; sourceTree = "<group>"; };
+		EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMorseCodeTransformView.swift; sourceTree = "<group>"; };
+		EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextLeftRightTransformView.swift; sourceTree = "<group>"; };
+		EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextCenterTransformView.swift; sourceTree = "<group>"; };
+		EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextCardPicVC.swift; sourceTree = "<group>"; };
+		EB9407CB26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTransformManager.swift; sourceTree = "<group>"; };
+		EB9407CD26F3819400CB4A66 /* textTransform_Font.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_Font.json; sourceTree = "<group>"; };
+		EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_LeftAdd.json; sourceTree = "<group>"; };
+		EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_Zalgo.json; sourceTree = "<group>"; };
+		EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardWatermarkOverlayer.swift; sourceTree = "<group>"; };
+		EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardWatermarkBar.swift; sourceTree = "<group>"; };
+		EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardTextInputBar.swift; sourceTree = "<group>"; };
+		EB960C4F26DF793D00EDB86A /* KIkbsCardThemeColorBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardThemeColorBar.swift; sourceTree = "<group>"; };
+		EB960C5126DFCF4D00EDB86A /* textCardThemeColor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textCardThemeColor.json; sourceTree = "<group>"; };
+		EB960C5326DFD1AA00EDB86A /* textCardOverlayerImg.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textCardOverlayerImg.json; sourceTree = "<group>"; };
+		EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialStrPreviewView.swift; sourceTree = "<group>"; };
+		EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeboardFavoriteDB.swift; sourceTree = "<group>"; };
+		EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardCanvasTextView.swift; sourceTree = "<group>"; };
+		EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardTextInputView.swift; sourceTree = "<group>"; };
+		EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialTextLibVC.swift; sourceTree = "<group>"; };
+		EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsPurchaseManager.swift; sourceTree = "<group>"; };
+		EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeyboardFavoriteVC.swift; sourceTree = "<group>"; };
+		EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeyboardFavoritePageView.swift; sourceTree = "<group>"; };
+		EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsDataManager.swift; sourceTree = "<group>"; };
+		EBAE32A126D78E8600FFC212 /* specialSymbolList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialSymbolList.json; sourceTree = "<group>"; };
+		EBAE32A326D78E9100FFC212 /* specialQuoteList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialQuoteList.json; sourceTree = "<group>"; };
+		EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialEmojiStrList.json; sourceTree = "<group>"; };
+		EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialStrLeftIndexView.swift; sourceTree = "<group>"; };
+		EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIkbsKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF8BCBB268EC32700DA318F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBF8BCBD268EC32700DA318F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBF8BCBF268EC32700DA318F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBF8BCC2268EC32700DA318F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBF8BCC4268EC32D00DA318F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBF8BCC7268EC32D00DA318F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBF8BCC9268EC32D00DA318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KIkkKeyBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		EBF8BCD7268ECD2400DA318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF8BCB5268EC32700DA318F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD16FE86E616849F44F724AF /* Pods_KIkbsKeyBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF8BCD0268ECD2400DA318F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50FEC780FA3DBA714FEBDF6 /* Pods_KIkkKeyBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496934D9F5DB9F2EDCE4C5A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F369BAF95FF4BD37AED85C /* Pods-KIkbsKeyBoard.debug.xcconfig */,
+				C8370BC81A35FDD9377060E3 /* Pods-KIkbsKeyBoard.release.xcconfig */,
+				302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */,
+				1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CCC964E813400C3FC13BE47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */,
+				53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB4E385926CB9B1500D1FE4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */,
+				EB9F2E8D26DA56590027484A /* TextPicCard */,
+				EBABA52A26D928BB002EE5F5 /* KeyboardFavorite */,
+				EBA4E96026D52C5000E58274 /* SpecialTextLib */,
+				EB4E399F26CCE62D00D1FE4D /* TextTransform */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB4E399F26CCE62D00D1FE4D /* TextTransform */ = {
+			isa = PBXGroup;
+			children = (
+				EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */,
+				EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */,
+				EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */,
+				EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */,
+				EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */,
+			);
+			path = TextTransform;
+			sourceTree = "<group>";
+		};
+		EB7A2B7426C4D7AA00F25D38 /* RootTree */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8BCBB268EC32700DA318F /* AppDelegate.swift */,
+				EBF8BCBD268EC32700DA318F /* SceneDelegate.swift */,
+				EBF8BCBF268EC32700DA318F /* ViewController.swift */,
+				EBF8BCC1268EC32700DA318F /* Main.storyboard */,
+				EBF8BCC4268EC32D00DA318F /* Assets.xcassets */,
+				EBF8BCC6268EC32D00DA318F /* LaunchScreen.storyboard */,
+				EBF8BCC9268EC32D00DA318F /* Info.plist */,
+				EB7A2B7926C4D81000F25D38 /* TEST.h */,
+				EB7A2B7A26C4D81000F25D38 /* TEST.m */,
+				EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */,
+			);
+			name = RootTree;
+			sourceTree = "<group>";
+		};
+		EB7A2B7526C4D7C500F25D38 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */,
+				EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */,
+				EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */,
+				EB4E385926CB9B1500D1FE4D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EB7A2B8026C4FF2400F25D38 /* ToolStuff */ = {
+			isa = PBXGroup;
+			children = (
+				EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */,
+				EB9407CB26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift */,
+				EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */,
+				EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */,
+				EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */,
+				EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */,
+				EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */,
+				EBAE32A126D78E8600FFC212 /* specialSymbolList.json */,
+				EBAE32A326D78E9100FFC212 /* specialQuoteList.json */,
+				EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */,
+				EB960C5126DFCF4D00EDB86A /* textCardThemeColor.json */,
+				EB960C5326DFD1AA00EDB86A /* textCardOverlayerImg.json */,
+				EB9407CD26F3819400CB4A66 /* textTransform_Font.json */,
+				EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */,
+				EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */,
+				EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */,
+			);
+			path = ToolStuff;
+			sourceTree = "<group>";
+		};
+		EB7A2B8326C5026100F25D38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B9A26C502D300F25D38 /* CustomKeyBtn */,
+				EB7A2B8426C5028600F25D38 /* StuffView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB7A2B8426C5028600F25D38 /* StuffView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B8626C5029700F25D38 /* KeyBCoinLockView.swift */,
+				EB7A2B8726C5029800F25D38 /* KeyBStuffFontView.swift */,
+				EB7A2B8926C5029800F25D38 /* KeyBStuffFuHaoView.swift */,
+				EB7A2B8826C5029800F25D38 /* KeyBStuffTagView.swift */,
+				EB7A2B8A26C5029800F25D38 /* KeyBTopFontSelectBar.swift */,
+				EB7A2B8526C5029700F25D38 /* KeyBTopMenuBar.swift */,
+			);
+			path = StuffView;
+			sourceTree = "<group>";
+		};
+		EB7A2B9126C502B000F25D38 /* ManagerData */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B9426C502B900F25D38 /* KeyBCoinManaswift.swift */,
+				EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */,
+				EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */,
+				EB7A2B9226C502B900F25D38 /* KeyBTag.json */,
+			);
+			path = ManagerData;
+			sourceTree = "<group>";
+		};
+		EB7A2B9A26C502D300F25D38 /* CustomKeyBtn */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */,
+				EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */,
+				EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */,
+				EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */,
+			);
+			path = CustomKeyBtn;
+			sourceTree = "<group>";
+		};
+		EB9F2E8D26DA56590027484A /* TextPicCard */ = {
+			isa = PBXGroup;
+			children = (
+				EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */,
+				EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */,
+				EB960C4F26DF793D00EDB86A /* KIkbsCardThemeColorBar.swift */,
+				EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */,
+				EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */,
+				EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */,
+				EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */,
+			);
+			path = TextPicCard;
+			sourceTree = "<group>";
+		};
+		EBA4E96026D52C5000E58274 /* SpecialTextLib */ = {
+			isa = PBXGroup;
+			children = (
+				EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */,
+				EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */,
+				EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */,
+			);
+			path = SpecialTextLib;
+			sourceTree = "<group>";
+		};
+		EBABA52A26D928BB002EE5F5 /* KeyboardFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */,
+				EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */,
+			);
+			path = KeyboardFavorite;
+			sourceTree = "<group>";
+		};
+		EBF8BCAF268EC32700DA318F = {
+			isa = PBXGroup;
+			children = (
+				EBF8BCBA268EC32700DA318F /* KIkbsKeyBoard */,
+				EBF8BCD4268ECD2400DA318F /* KIkkKeyBoard */,
+				EBF8BCB9268EC32700DA318F /* Products */,
+				496934D9F5DB9F2EDCE4C5A6 /* Pods */,
+				6CCC964E813400C3FC13BE47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF8BCB9268EC32700DA318F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */,
+				EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF8BCBA268EC32700DA318F /* KIkbsKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B8026C4FF2400F25D38 /* ToolStuff */,
+				EB7A2B7526C4D7C500F25D38 /* Main */,
+				EB7A2B7426C4D7AA00F25D38 /* RootTree */,
+			);
+			path = KIkbsKeyBoard;
+			sourceTree = "<group>";
+		};
+		EBF8BCD4268ECD2400DA318F /* KIkkKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */,
+				EB7A2B9126C502B000F25D38 /* ManagerData */,
+				EB7A2B8326C5026100F25D38 /* View */,
+				EBF8BCD7268ECD2400DA318F /* Info.plist */,
+			);
+			path = KIkkKeyBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF8BCB7268EC32700DA318F /* KIkbsKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF8BCCC268EC32D00DA318F /* Build configuration list for PBXNativeTarget "KIkbsKeyBoard" */;
+			buildPhases = (
+				AC089E9B2C4CD4FFA25CA8E3 /* [CP] Check Pods Manifest.lock */,
+				EBF8BCB4268EC32700DA318F /* Sources */,
+				EBF8BCB5268EC32700DA318F /* Frameworks */,
+				EBF8BCB6268EC32700DA318F /* Resources */,
+				82B0E12A90EE60CD9A84E7F9 /* [CP] Embed Pods Frameworks */,
+				EBF8BCDE268ECD2400DA318F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF8BCD9268ECD2400DA318F /* PBXTargetDependency */,
+			);
+			name = KIkbsKeyBoard;
+			productName = KIkbsKeyBoard;
+			productReference = EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF8BCDB268ECD2400DA318F /* Build configuration list for PBXNativeTarget "KIkkKeyBoard" */;
+			buildPhases = (
+				EF24BF524763CDECB3F2886B /* [CP] Check Pods Manifest.lock */,
+				EBF8BCCF268ECD2400DA318F /* Sources */,
+				EBF8BCD0268ECD2400DA318F /* Frameworks */,
+				EBF8BCD1268ECD2400DA318F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIkkKeyBoard;
+			productName = KIkkKeyBoard;
+			productReference = EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF8BCB0268EC32700DA318F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EBF8BCB7268EC32700DA318F = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					EBF8BCD2268ECD2400DA318F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EBF8BCB3268EC32700DA318F /* Build configuration list for PBXProject "KIkbsKeyBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF8BCAF268EC32700DA318F;
+			productRefGroup = EBF8BCB9268EC32700DA318F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF8BCB7268EC32700DA318F /* KIkbsKeyBoard */,
+				EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF8BCB6268EC32700DA318F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB960C5226DFCF4D00EDB86A /* textCardThemeColor.json in Resources */,
+				EBAE32A626D78E9C00FFC212 /* specialEmojiStrList.json in Resources */,
+				EB9407D226F381DF00CB4A66 /* textTransform_Zalgo.json in Resources */,
+				EB9407D026F381C300CB4A66 /* textTransform_LeftAdd.json in Resources */,
+				EBF8BCC8268EC32D00DA318F /* LaunchScreen.storyboard in Resources */,
+				EBAE32A226D78E8600FFC212 /* specialSymbolList.json in Resources */,
+				EBAE32A426D78E9100FFC212 /* specialQuoteList.json in Resources */,
+				EBF8BCC5268EC32D00DA318F /* Assets.xcassets in Resources */,
+				EB9407CE26F3819400CB4A66 /* textTransform_Font.json in Resources */,
+				EB960C5426DFD1AA00EDB86A /* textCardOverlayerImg.json in Resources */,
+				EBF8BCC3268EC32700DA318F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF8BCD1268ECD2400DA318F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7A2B9926C502B900F25D38 /* KeyBFuHao.json in Resources */,
+				EB7A2B9626C502B900F25D38 /* KeyBTag.json in Resources */,
+				EB7A2B9F26C502E300F25D38 /* KeyBstyleList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82B0E12A90EE60CD9A84E7F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC089E9B2C4CD4FFA25CA8E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIkbsKeyBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF24BF524763CDECB3F2886B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIkkKeyBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF8BCB4268EC32700DA318F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7A2B7B26C4D81000F25D38 /* TEST.m in Sources */,
+				EBA03FA526E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift in Sources */,
+				EB7A2B8226C4FF3900F25D38 /* ExtensionTool.swift in Sources */,
+				EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */,
+				EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */,
+				EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */,
+				EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */,
+				EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */,
+				EBF8BCC0268EC32700DA318F /* ViewController.swift in Sources */,
+				EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */,
+				EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */,
+				EBF8BCBC268EC32700DA318F /* AppDelegate.swift in Sources */,
+				EB7A2B7726C4D7DB00F25D38 /* KIkbsMainVC.swift in Sources */,
+				EBA4E96226D52C8700E58274 /* KIkbsSpecialTextLibVC.swift in Sources */,
+				EB88FE4526D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift in Sources */,
+				EB960C4A26DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift in Sources */,
+				EB9F2E8C26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift in Sources */,
+				EBF8BCBE268EC32700DA318F /* SceneDelegate.swift in Sources */,
+				EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */,
+				EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */,
+				EB88FDE226D37FD7005BD007 /* LLMorseCodeTranslator.swift in Sources */,
+				EBA03FA726E5C51600BE0043 /* KIkbsCardTextInputView.swift in Sources */,
+				EB960C4C26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift in Sources */,
+				EB4E385B26CB9F2D00D1FE4D /* ConfigTool.swift in Sources */,
+				EBABA52926D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift in Sources */,
+				EBABA53126D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift in Sources */,
+				EB960C5026DF793D00EDB86A /* KIkbsCardThemeColorBar.swift in Sources */,
+				EB9407CC26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift in Sources */,
+				EB8CD38526DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift in Sources */,
+				EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */,
+				EBAE32A026D7875500FFC212 /* KIkbsDataManager.swift in Sources */,
+				EB99D90426D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift in Sources */,
+				EBAE32AA26D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF8BCCF268ECD2400DA318F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF8BCD6268ECD2400DA318F /* KeyboardViewController.swift in Sources */,
+				EB7A2B8E26C5029800F25D38 /* KeyBStuffTagView.swift in Sources */,
+				EB7A2B8C26C5029800F25D38 /* KeyBCoinLockView.swift in Sources */,
+				EB7A2B8B26C5029800F25D38 /* KeyBTopMenuBar.swift in Sources */,
+				EB7A2BA126C502E300F25D38 /* KeyboardView.swift in Sources */,
+				EB7A2B9726C502B900F25D38 /* KeyBStuffDataMana.swift in Sources */,
+				EB7A2B8F26C5029800F25D38 /* KeyBStuffFuHaoView.swift in Sources */,
+				EB7A2B8D26C5029800F25D38 /* KeyBStuffFontView.swift in Sources */,
+				EB7A2B9826C502B900F25D38 /* KeyBCoinManaswift.swift in Sources */,
+				EB7A2B9026C5029800F25D38 /* KeyBTopFontSelectBar.swift in Sources */,
+				EB7A2BA026C502E300F25D38 /* KBKeyBtnManager.swift in Sources */,
+				EB7A2BA226C502E300F25D38 /* KeyBKeyBtn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF8BCD9268ECD2400DA318F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */;
+			targetProxy = EBF8BCD8268ECD2400DA318F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF8BCC1268EC32700DA318F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF8BCC2268EC32700DA318F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBF8BCC6268EC32D00DA318F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF8BCC7268EC32D00DA318F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF8BCCA268EC32D00DA318F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBF8BCCB268EC32D00DA318F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBF8BCCD268EC32D00DA318F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F369BAF95FF4BD37AED85C /* Pods-KIkbsKeyBoard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kbs.KIkbsKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBF8BCCE268EC32D00DA318F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8370BC81A35FDD9377060E3 /* Pods-KIkbsKeyBoard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kbs.KIkbsKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EBF8BCDC268ECD2400DA318F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				INFOPLIST_FILE = KIkkKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kbs.KIkbsKeyBoard.KIkkKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBF8BCDD268ECD2400DA318F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				INFOPLIST_FILE = KIkkKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kbs.KIkbsKeyBoard.KIkkKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF8BCB3268EC32700DA318F /* Build configuration list for PBXProject "KIkbsKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF8BCCA268EC32D00DA318F /* Debug */,
+				EBF8BCCB268EC32D00DA318F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF8BCCC268EC32D00DA318F /* Build configuration list for PBXNativeTarget "KIkbsKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF8BCCD268EC32D00DA318F /* Debug */,
+				EBF8BCCE268EC32D00DA318F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF8BCDB268ECD2400DA318F /* Build configuration list for PBXNativeTarget "KIkkKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF8BCDC268ECD2400DA318F /* Debug */,
+				EBF8BCDD268ECD2400DA318F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF8BCB0268EC32700DA318F /* Project object */;
+}

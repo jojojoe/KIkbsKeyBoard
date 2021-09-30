@@ -1,0 +1,94 @@
+[
+    {
+        "titleName" : "Symble1",
+        "specialStrList" : [
+            "♛ฺ",
+            "♛ฺ",
+            "♛ฺ",
+            "♛ฺ",
+            "♛ฺ",
+            "♛ฺ",
+            "♛ฺ"
+        ],
+        "isPro" : false
+    },
+    {
+        "titleName" : "Symble2",
+        "specialStrList" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "isPro" : false
+    },
+    {
+        "titleName" : "Symble3",
+        "specialStrList" : [
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ"
+        ],
+        "isPro" : true
+    },
+    {
+        "titleName" : "Symble4",
+        "specialStrList" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "isPro" : false
+    },
+    {
+        "titleName" : "Symble5",
+        "specialStrList" : [
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ"
+        ],
+        "isPro" : true
+    },
+    {
+        "titleName" : "Symble6",
+        "specialStrList" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "isPro" : false
+    },
+    {
+        "titleName" : "Symble7",
+        "specialStrList" : [
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ",
+            "✷ฺ"
+        ],
+        "isPro" : true
+    }
+    
+]

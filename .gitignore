@@ -1,0 +1,7 @@
+KIkbsKeyBoard.xcodeproj/xcuserdata/
+KIkbsKeyBoard.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+KIkbsKeyBoard.xcodeproj/project.xcworkspace/xcuserdata/

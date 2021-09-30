@@ -1,0 +1,55 @@
+
+
+[
+    {
+        "title": "Motivation",
+        "needPurchase": false,
+        "content": "#photooftheday  #instagood  #nofilter  #tbt  #igers  #picoftheday  #love  #nature  #swag  #lifeisgood  #caseofthemondays  #instapic  #instadaily  #selfie  #instamood  #bestoftheday"
+    },
+    {
+        "title": "Movie",
+        "needPurchase": false,
+        "content": "#followme  #likeforlike  #like4like  #follow4follow  #followforfollow  #f4f"
+    },
+    {
+        "title": "Lyrics",
+        "needPurchase": true,
+        "content": "#styleinspo  #ootd  #outfitoftheday  #whatiwore  #shoppingaddict  #beautydoesnthavetobepain  #currentlywearing  #instastyle  #lookgoodfeelgood"
+    },
+    {
+        "title": "Girl",
+        "needPurchase": true,
+        "content": "#instafood  #omnomnom  #foodporn  #food  #foodie  #organic  #healthyeats  #goodeats  #vegetarian  #vegan  #glutenfree  #hungry  #homemade  #madefromscratch"
+    },
+    {
+        "title": "Love",
+        "needPurchase": true,
+        "content": "#travel  #staycation  #vacation  #sunsout  #resortwear  #tourist  #travelbug  #solotravel  #honeymoon  #traveltuesday  #wanderlust  #wanderlustwednesday  #travelgram  #sun"
+    },
+    {
+        "title": "Vacation",
+        "needPurchase": true,
+        "content": "#puppylove  #mansbestfriend  #womansbestfriend  #catsofinstagram  #dogsofinstagram  #dogstagram  #doglife  #catlife  #instapet"
+    },
+    {
+        "title": "Success",
+        "needPurchase": true,
+        "content": "#techie  #latesttech  #ilovemygadgets  #gadgetsgalore  #apple  #android  #applevsandroid  #wearabletech  #VR  #mobile  #makinglifeeasier  #innovation"
+    },
+    {
+        "title": "Nature",
+        "needPurchase": true,
+        "content": "#ido  #tyingtheknot  #shesaidyes  #heasked  #fallwedding  #rusticwedding  #summerwedding  #weddingfavors  #centerpieces  #sayyestothedress  #bohowedding  #weddinghair  #weddingstyle  #loveislove"
+    },
+    {
+        "title": "Clever",
+        "needPurchase": true,
+        "content": "#lookgoodfeelgood  #feeltheburn  #nopainnogain  #workingonabetterme  #cardio  #fitfam  #yogafordays  #fitlife  #trainhard  #noexcuses"
+    },
+    {
+        "title": "Selfie",
+        "needPurchase": true,
+        "content": "#instacontest  #instagiveaway  #giveaway  #sweepstakes  #contestalert  #contestentry  #winit  #freebie  #winitwednesday"
+    } 
+     
+]

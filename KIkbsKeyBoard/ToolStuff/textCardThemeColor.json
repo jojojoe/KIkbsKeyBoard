@@ -1,0 +1,91 @@
+[
+    {
+        "bgColor" : "#F1F1F1",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+        
+    },
+    {
+        "bgColor" : "#F133F1",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#F1F111",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#63F1F1",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#11F1F1",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#F1341F",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#999900",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    },
+    {
+        "bgColor" : "#F1F1F1",
+        "normalTextColor" : "#999999",
+        "hilightTextColors" : [
+            "#999999",
+            "#990099",
+            "#009999",
+            "#999900",
+            "#12F919"
+        ]
+    }
+]
