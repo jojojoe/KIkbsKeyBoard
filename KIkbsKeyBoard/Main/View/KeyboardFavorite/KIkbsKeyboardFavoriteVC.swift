@@ -153,9 +153,8 @@ extension KIkbsKeyboardFavoriteVC {
         segmentedView.contentEdgeInsetRight = 55
         bottomCanvasView.addSubview(pagingView)
         segmentedView.listContainer = pagingView.listContainerView
-         
+        
         //
-//        pagingView.pinSectionHeaderVerticalOffset = -22
         pagingView.mainTableView.backgroundColor = .clear
         pagingView.mainTableView.alwaysBounceVertical = false
         pagingView.mainTableView.bounces = false

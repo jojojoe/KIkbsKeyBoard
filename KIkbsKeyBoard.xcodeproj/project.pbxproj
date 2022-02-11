@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C50FEC780FA3DBA714FEBDF6 /* Pods_KIkkKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */; };
 		CD16FE86E616849F44F724AF /* Pods_KIkbsKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */; };
+		EB4634FA27146719005877C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC4268EC32D00DA318F /* Assets.xcassets */; };
 		EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */; };
 		EB4E385B26CB9F2D00D1FE4D /* ConfigTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */; };
 		EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */; };
@@ -506,6 +507,7 @@
 			files = (
 				EB7A2B9926C502B900F25D38 /* KeyBFuHao.json in Resources */,
 				EB7A2B9626C502B900F25D38 /* KeyBTag.json in Resources */,
+				EB4634FA27146719005877C2 /* Assets.xcassets in Resources */,
 				EB7A2B9F26C502E300F25D38 /* KeyBstyleList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
