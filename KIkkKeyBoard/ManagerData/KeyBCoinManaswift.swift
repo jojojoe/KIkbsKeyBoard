@@ -17,7 +17,6 @@ class KBCoinManager: NSObject {
         super.init()
     }
     
-    
     func currentCoinCount() -> Int {
         
         guard let userDefault = UserDefaults.init(suiteName: AppGroup) else { return 100 }

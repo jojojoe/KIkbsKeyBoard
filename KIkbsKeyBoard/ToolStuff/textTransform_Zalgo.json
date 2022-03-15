@@ -1,38 +1,969 @@
 
 [
     {
-        "previewStr" : "abcde",
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0300",
+            "0x0316"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0301",
+            "0x0317"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0302",
+            "0x0318"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0303",
+            "0x0319"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0304",
+            "0x0320"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0305",
+            "0x0321"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0306",
+            "0x0322"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0307",
+            "0x0323"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0308",
+            "0x0324"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0307",
+            "0x0323"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0308",
+            "0x0324"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0309",
+            "0x0325"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030a",
+            "0x0326"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030b",
+            "0x0327"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030b",
+            "0x0327"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "abcdefghijklmnopqrstuvwxyz",
+        "contentStr_up" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030c",
+            "0x0328"
+        ]
+        
+    },
+    
+    
+    {
+        "previewStr" : "Text",
         "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
         "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
-        "leftAddStr" : "^^^^",
-        "rightAddStr" : "^^^^",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
         "zalgoList" : [
-            "0x0334",
+            "0x030d",
+            "0x0329"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030e",
+            "0x0330"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030f",
+            "0x033a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0310",
+            "0x033b"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0311",
+            "0x033c"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0312",
+            "0x0345"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0313",
+            "0x0347"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0314",
+            "0x0348"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0315",
+            "0x0349"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x033d",
+            "0x034d"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x033e",
+            "0x034e"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x033f",
+            "0x0353"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0340",
+            "0x0353"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0341",
+            "0x0354"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0342",
+            "0x0355"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
+        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0343",
+            "0x0356"
+        ]
+        
+    },
+    
+    
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0344",
+            "0x0359"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x031a",
+            "0x035a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x031a",
+            "0x035a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x031b",
+            "0x035c"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0346",
+            "0x035d"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x034a",
+            "0x035e"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x034b",
+            "0x035f"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x034c",
+            "0x0362"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0350",
+            "0x0316"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0351",
+            "0x0317"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0352",
+            "0x0318"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0360",
+            "0x0319"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0361",
+            "0x031c"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0363",
+            "0x031d"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0364",
+            "0x031e"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘨𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻",
+        "contentStr_up" : "𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘎𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0365",
+            "0x031f"
+        ]
+        
+    },
+    
+    
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0366",
+            "0x0320"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0367",
+            "0x0321"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0368",
+            "0x0322"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0369",
+            "0x0323"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036a",
+            "0x0324"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036b",
+            "0x0325"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036c",
+            "0x0326"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036d",
+            "0x0327"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036e",
+            "0x0328"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x036f",
+            "0x0329"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x035b",
+            "0x032a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0357",
+            "0x032b"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0358",
+            "0x032c"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x034f",
+            "0x032d"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0300",
+            "0x032e"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙜𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯",
+        "contentStr_up" : "𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙂𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0301",
+            "0x032f"
+        ]
+        
+    },
+    
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0302",
+            "0x0330"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0303",
+            "0x0331"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0304",
+            "0x0332"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0305",
+            "0x0333"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0306",
+            "0x0334"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0307",
             "0x0335"
         ]
         
     },
     {
-        "previewStr" : "abcde",
-        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
-        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
-        "leftAddStr" : "^^^^",
-        "rightAddStr" : "^^^^",
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
         "zalgoList" : [
-            "0x0334",
-            "0x0335"
+            "0x0308",
+            "0x0336"
         ]
         
     },
     {
-        "previewStr" : "abcde",
-        "contentStr_low" : "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇",
-        "contentStr_up" : "𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭",
-        "leftAddStr" : "^^^^",
-        "rightAddStr" : "^^^^",
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
         "zalgoList" : [
-            "0x0334",
-            "0x0335"
+            "0x0309",
+            "0x0337"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030a",
+            "0x0338"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030b",
+            "0x0339"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030c",
+            "0x033a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030c",
+            "0x033a"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030d",
+            "0x033b"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030e",
+            "0x033c"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x030f",
+            "0x0347"
+        ]
+        
+    },
+    {
+        "previewStr" : "Text",
+        "contentStr_low" : "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚐𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣",
+        "contentStr_up" : "𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙶𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉",
+        "leftAddStr" : "",
+        "rightAddStr" : "",
+        "zalgoList" : [
+            "0x0310",
+            "0x0345"
         ]
         
     }
