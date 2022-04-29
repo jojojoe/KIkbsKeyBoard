@@ -17,11 +17,12 @@ class KIkbsMainVC: UIViewController {
     let keyboardFavoriteVC = KIkbsKeyboardFavoriteVC()
     let textCardPicVC = KIkbsTextCardPicVC()
     let settingVC = KIkbsSettingVC()
+    let toolBar = KIkbsMainToolBar()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupContentView()
-        setupBottonBar()
+        setupBottonBar()   
     }
     
 
@@ -92,7 +93,7 @@ extension KIkbsMainVC {
     }
     
     func setupBottonBar() {
-        let toolBar = KIkbsMainToolBar()
+        
         toolBar
             .adhere(toSuperview: bottomBar)
         toolBar.snp.makeConstraints {

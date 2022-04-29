@@ -14,7 +14,7 @@ struct TextTranformItem: Codable {
     var leftAddStr = ""
     var rightAddStr = ""
     var zalgoList: [String] = []
-    
+//    var itemType: String?
 }
 
 class KIkbsTextTransformManager: NSObject {
@@ -41,13 +41,16 @@ class KIkbsTextTransformManager: NSObject {
             let lowChars = transformItem.contentStr_low.charactersArray
             let upChars = transformItem.contentStr_up.charactersArray
             
-            if lowChars.contains(item) {
-                if let index = lowChars.firstIndex(of: item) {
+            let lowsList = "abcdefghijklmnopqrstuvwxyz".charactersArray
+            let upsList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".charactersArray
+
+            if lowsList.contains(item) {
+                if let index = lowsList.firstIndex(of: item) {
                     let char = lowChars[index]
                     resultStr.append(char)
                 }
-            } else if upChars.contains(item) {
-                if let index = upChars.firstIndex(of: item) {
+            } else if upsList.contains(item) {
+                if let index = upsList.firstIndex(of: item) {
                     let char = upChars[index]
                     resultStr.append(char)
                 }

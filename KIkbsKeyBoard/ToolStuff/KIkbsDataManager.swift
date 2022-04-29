@@ -6,7 +6,7 @@
 //
 
 import UIKit
- 
+
 
 enum SpecialStrType {
     case symbol
@@ -26,7 +26,7 @@ struct TextCardThemeColor: Codable {
     var bgColor: String
     var normalTextColor: String
     var hilightTextColors: [String]
- 
+    
     
 }
 
@@ -40,7 +40,7 @@ struct TextCardThemeOverlayerItem: Codable {
     var big = ""
 }
 
- 
+
 
 
 class KIkbsDataManager: NSObject {
@@ -48,7 +48,7 @@ class KIkbsDataManager: NSObject {
     var specialSymbolList : [SpecialStrBundle] {
         return KIkbsDataManager.default.loadJson([SpecialStrBundle].self, name: "specialSymbolList") ?? []
     }
-     
+    
     var specialQuoteList: [SpecialStrBundle] {
         return KIkbsDataManager.default.loadJson([SpecialStrBundle].self, name: "specialQuoteList") ?? []
     }
@@ -80,8 +80,9 @@ class KIkbsDataManager: NSObject {
     
     func loadData() {
         
-        let shapeBundle = SpecialStrBundle.init(titleName: "Shape", specialStrList: komojiArray, isPro: true)
-        specialShapeList = [shapeBundle]
+        let shape1Bundle = SpecialStrBundle.init(titleName: "Cute", specialStrList: komojiArray, isPro: true)
+        let shape2Bundle = SpecialStrBundle.init(titleName: "Cartoon", specialStrList: komoji2Array, isPro: true)
+        specialShapeList = [shape1Bundle, shape2Bundle]
         textCardThemeNormalFontList = [Font_Avenir_Heavy, Font_AvenirNext_Medium]
         textCardThemeHilightFontList = ["KohinoorGujarati-Bold", "Menlo-Regular", "MyanmarSangamMN-Bold", "NotoSansMyanmar-Regular", "NotoSansOriya-Bold"]
         
@@ -95,17 +96,55 @@ class KIkbsDataManager: NSObject {
     }
     
     let komojiArray = [
-        """
-        ｡*☆∴｡　     ｡∴☆*｡
-        ｡★*ﾟﾟ*★∵★*ﾟﾟ*★｡
-        ☆ﾟ　　  ﾟ☆ﾟ　　   ﾟ☆
-        ★*                         *★
-        ﾟﾟﾟﾟ☆｡ ♥ LOVE. ♥ ｡☆ﾟ
-        *★｡               ｡★*
-        ∵☆｡ 　　 ｡☆∵
-        ﾟﾟﾟﾟ*★｡ ｡★*ﾟ
-        　ﾟ *☆
-        """,
+            """
+            ｡*☆∴｡　     ｡∴☆*｡
+            ｡★*ﾟﾟ*★∵★*ﾟﾟ*★｡
+            ☆ﾟ　　  ﾟ☆ﾟ　　   ﾟ☆
+            ★*                         *★
+            ﾟﾟﾟﾟﾟﾟﾟﾟ☆｡ ♥ LOVE. ♥ ｡☆ﾟ
+            *★｡               ｡★*
+            ∵☆｡ 　　 ｡☆∵
+            ﾟﾟﾟﾟﾟﾟﾟﾟ*★｡ ｡★*ﾟ
+            　ﾟ *☆
+            """,
+            """
+            ｡:💖・｡･ﾟ🌸*.ﾟ｡
+            ･💠.💜ﾟ.🌼🍏｡:*･.💛
+            .ﾟ❤.｡;｡🍓.:*🍇.ﾟ｡🍊｡
+            :*｡_💠👝｡_💮*･_ﾟ👛
+            ＼ξ　＼　 ζ／
+            ∧🎀∧＼ ξ
+            （*･ω･ )／
+            c/　 つ∀o
+            しー-Ｊ おめでとう～🎉
+            """,
+                    """
+                    ☆ *　. 　☆
+                    　　        .  ∧＿∧　∩　* ☆
+                    * ☆ ( ・∀・)/ .
+                    　. ⊂　　  ノ* ☆
+                    ☆ * (つ ノ .☆
+                    (ノ
+                    """,
+                    """
+                    ▄▄▄▄██〓█●
+                    ▂▃▄▅█████▅▄
+                    ████████████████
+                    ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤
+                    　　ヽ(´･ω･)ﾉ
+                    """,
+            """
+               🌷🌸🌷🌸
+               🌸🌷🌸🌷🌸
+             Λ🌷🌸🌷🌸🌷
+            ( ˘ ᵕ ˘🌷🌸🌷
+             ヽ  つ＼\\   ／
+                UU   / 🎀 \\
+            """,
+    ]
+    
+    let komoji2Array = [
+        
         """
         / )))　　　   _
         ／ イ  　　　(((
@@ -118,25 +157,8 @@ class KIkbsDataManager: NSObject {
         　　 ｜  ミ土彡 ｜
         　　  )　　　 ｜
         """,
-        """
-        ｡:💖・｡･ﾟ🌸*.ﾟ｡
-        ･💠.💜ﾟ.🌼🍏｡:*･.💛
-        .ﾟ❤.｡;｡🍓.:*🍇.ﾟ｡🍊｡
-        :*｡_💠👝｡_💮*･_ﾟ👛
-        ＼ξ　＼　 ζ／
-        ∧🎀∧＼ ξ
-        （*･ω･ )／
-        c/　 つ∀o
-        しー-Ｊ おめでとう～🎉
-        """,
-        """
-        ☆ *　. 　☆
-        　　        .  ∧＿∧　∩　* ☆
-        * ☆ ( ・∀・)/ .
-        　. ⊂　　  ノ* ☆
-        ☆ * (つ ノ .☆
-        (ノ
-        """,
+        
+        
         """
         ╭﹌☆﹌﹌﹌☆﹌╮
         ∣　　　　　　　∣
@@ -170,13 +192,7 @@ class KIkbsDataManager: NSObject {
         ＿(ニっ/　　　　　/　｜＿＿＿＿
         　　＼/＿＿＿＿＿/　(u　 ⊃
         """,
-        """
-        ▄▄▄▄██〓█●
-        ▂▃▄▅█████▅▄
-        ████████████████
-        ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤
-        　　ヽ(´･ω･)ﾉ
-        """,
+        
         """
               ／￣￣＼
         　　 ／ 　〇・   ＞
@@ -271,7 +287,7 @@ class KIkbsDataManager: NSObject {
          ／　／::
         (　く:::
         |＼ ヽ:::
-
+        
         """,
         """
               ＿＿＿
@@ -301,16 +317,8 @@ class KIkbsDataManager: NSObject {
             　ヾ(⌒ﾉ
         　　  　` J
         """,
-        """
-           🌷🌸🌷🌸
-           🌸🌷🌸🌷🌸
-         Λ🌷🌸🌷🌸🌷
-        ( ˘ ᵕ ˘🌷🌸🌷
-         ヽ  つ＼\\   ／
-            UU   / 🎀 \\
-        """,
-        ]
-    
+        
+    ]
 }
 extension KIkbsDataManager {
     func loadJson<T: Codable>(_: T.Type, name: String, type: String = "json") -> T? {

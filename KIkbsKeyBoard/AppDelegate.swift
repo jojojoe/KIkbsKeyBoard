@@ -60,16 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func checkShowStoreVC(urlString: String) {
-        if urlString == "KIKeykbsKeyBoard://\("Store")" {
-            
-            if self.mainVC.visibleVC?.className.contains("KIkbsStoreVC") ?? false {
-                
-            } else {
-                self.mainVC.present(KIkbsStoreVC(), animated: true, completion: nil)
-            }
-        }
-    }
+   
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // init db
@@ -98,7 +89,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
          
     }
-
 
 }
 

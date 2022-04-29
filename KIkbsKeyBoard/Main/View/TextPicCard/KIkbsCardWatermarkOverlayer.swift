@@ -158,7 +158,11 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
             bgView.snp.makeConstraints {
                 $0.left.top.right.bottom.equalToSuperview()
             }
-             
+            //
+            let bgColorView = UIView()
+                .backgroundColor(UIColor.white.withAlphaComponent(0.2))
+                .adhere(toSuperview: cell.contentView)
+            
             //
             let label = UILabel()
                 .fontName(13, "Verdana-Bold")
@@ -169,19 +173,23 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 .adhere(toSuperview: bgView)
             label.adjustsFontSizeToFitWidth = true
             label.snp.makeConstraints {
-                $0.centerX.equalToSuperview()
-                $0.width.lessThanOrEqualTo(cell.contentView.bounds.width - 20)
-                $0.centerY.equalToSuperview()
-                $0.top.equalTo(bgView.snp.centerY).offset(2)
+                $0.left.top.right.bottom.equalToSuperview()
             }
-            bgView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+            bgColorView.snp.makeConstraints {
+                $0.left.top.equalTo(label).offset(-6)
+                $0.bottom.right.equalTo(label).offset(6)
+            }
+            bgView.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/4)
         } else if currentWaterType == 6 {
             let bgView = UIView()
             cell.contentView.addSubview(bgView)
             bgView.snp.makeConstraints {
                 $0.left.top.right.bottom.equalToSuperview()
             }
-             
+            let bgColorView = UIView()
+                .backgroundColor(UIColor.white.withAlphaComponent(0.2))
+                .adhere(toSuperview: cell.contentView)
+            bgColorView.layer.cornerRadius = 10
             //
             let label = UILabel()
                 .fontName(13, "Verdana-Bold")
@@ -197,8 +205,12 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.bottom.lessThanOrEqualTo(bgView.snp.bottom).offset(-5)
                 $0.centerY.equalToSuperview()
             }
+            bgColorView.snp.makeConstraints {
+                $0.left.top.equalTo(label).offset(-6)
+                $0.bottom.right.equalTo(label).offset(6)
+            }
             
-            bgView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+//            bgView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
         }
         
         

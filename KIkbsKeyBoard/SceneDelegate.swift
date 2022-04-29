@@ -34,18 +34,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         initMainVC()
         
-        //
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5) {
-            [weak self] in
-            guard let `self` = self else {return}
-            debugPrint("KIKeykbsKeyBoard://")
-            self.checkShowStoreVC(urlString: connectionOptions.urlContexts.first?.url.absoluteString ?? "")
-            
-        }
-        
-        
-        
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -71,12 +59,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func checkShowStoreVC(urlString: String) {
-        if urlString == "KIKeykbsKeyBoard://\("Store")" {
-            
-            if self.mainVC.visibleVC?.className.contains("KIkbsStoreVC") ?? false {
-                
-            } else {
-                self.mainVC.present(KIkbsStoreVC(), animated: true, completion: nil)
+        if urlString == "KIKeykbsKeyBoard://\("Favorite")" {
+//            self.mainVC.present(KIkbsStoreVC(), animated: true, completion: nil)
+            if let item = self.mainVC.toolBar.currentItem, item.type != .keyborad {
+                let keyItem = self.mainVC.toolBar.list[2]
+                self.mainVC.toolBar.currentItem = keyItem
+                self.mainVC.showToolContentView(item: keyItem)
+                self.mainVC.toolBar.collection.reloadData()
+                self.mainVC.view.endEditing(true)
             }
         }
     }

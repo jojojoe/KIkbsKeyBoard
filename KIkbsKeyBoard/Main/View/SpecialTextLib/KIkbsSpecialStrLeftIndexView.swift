@@ -34,7 +34,7 @@ class KIkbsSpecialStrLeftIndexView: UIView {
     func setupView() {
         
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         collection = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         collection.showsVerticalScrollIndicator = false
         collection.showsHorizontalScrollIndicator = false

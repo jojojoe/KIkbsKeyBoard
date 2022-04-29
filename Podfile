@@ -32,6 +32,7 @@ target 'KIkkKeyBoard' do
   use_frameworks!
   pod 'ISEmojiView'
   pod 'SnapKit'
-
+  pod 'SQLite.swift'
+  
 end
 

@@ -83,8 +83,8 @@ extension KIkbsTextCenterTransformView: UICollectionViewDataSource {
 //        debugPrint("low = \(low)")
 //        debugPrint("result = \(result)")
 //
-        
-        cell.textLabel.text = item.previewStr
+        let resultString = KIkbsTextTransformManager.default.processReplaceText(contentStr: item.previewStr, transformItem: item)
+        cell.textLabel.text = resultString
         
         return cell
     }

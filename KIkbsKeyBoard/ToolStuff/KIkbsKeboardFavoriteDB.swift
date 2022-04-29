@@ -8,6 +8,9 @@
 import UIKit
 import SQLite
 
+
+var AppGroup = "group.com.keyinsfont.superone"
+
 struct KeyboardFavoriteItem {
     var keyOnly: String // 唯一标识符
     var groupNameKeyOnly: String
@@ -36,7 +39,11 @@ class KIkbsKeboardFavoriteDB: NSObject {
     fileprivate func dbPath() -> String {
         let documentPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
         let documentPath = documentPaths.first ?? ""
-        let dbPath = "\(documentPath)/KeyFavorite.sqlite"
+        
+        let groupURLPath = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: AppGroup)?.absoluteString ?? documentPath
+        
+        
+        let dbPath = "\(groupURLPath)/KeyFavorite.sqlite"
         debugPrint("dbPath: \(dbPath)")
         return dbPath
     }
@@ -87,7 +94,8 @@ extension KIkbsKeboardFavoriteDB {
 extension KIkbsKeboardFavoriteDB {
     func addFavoriteGroup(groupName: String, completionBlock: (()->Void)?) {
         do {
-            let keyOnly = Date().timeIntervalSince1970.string
+            
+            let keyOnly = String(describing: Date().timeIntervalSince1970)
             let insetSql = try db?.prepare("INSERT OR REPLACE INTO GroupNameList (keyOnly, groupName) VALUES (?,?)")
             try insetSql?.run([keyOnly, groupName])
         } catch {

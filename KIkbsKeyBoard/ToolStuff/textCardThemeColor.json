@@ -1,91 +1,333 @@
 [
     {
-        "bgColor" : "#F1F1F1",
-        "normalTextColor" : "#999999",
+        "bgColor" : "#FFFFFF",
+        "normalTextColor" : "#000000",
         "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
         ]
         
     },
     {
-        "bgColor" : "#F133F1",
-        "normalTextColor" : "#999999",
+        "bgColor" : "#000000",
+        "normalTextColor" : "#FFFFFF",
         "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
-        ]
-    },
-    {
-        "bgColor" : "#F1F111",
-        "normalTextColor" : "#999999",
-        "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
-        ]
-    },
-    {
-        "bgColor" : "#63F1F1",
-        "normalTextColor" : "#999999",
-        "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
-        ]
-    },
-    {
-        "bgColor" : "#11F1F1",
-        "normalTextColor" : "#999999",
-        "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
-        ]
-    },
-    {
-        "bgColor" : "#F1341F",
-        "normalTextColor" : "#999999",
-        "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
-        ]
-    },
-    {
-        "bgColor" : "#999900",
-        "normalTextColor" : "#999999",
-        "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
         ]
     },
     {
         "bgColor" : "#F1F1F1",
         "normalTextColor" : "#999999",
         "hilightTextColors" : [
-            "#999999",
-            "#990099",
-            "#009999",
-            "#999900",
-            "#12F919"
+            "#D24532",
+            "#319998",
+            "#4579E8",
+            "#744CE5",
+            "#A44DBA"
+        ]
+    },
+    {
+        "bgColor" : "#E5CFDF",
+        "normalTextColor" : "#319998",
+        "hilightTextColors" : [
+            "#000000",
+            "#FFFFFF",
+            "#744CE5",
+            "#73CFD2",
+            "#E244E2"
+        ]
+    },
+    {
+        "bgColor" : "#F7601D",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#D8FC52",
+            "#000000",
+            "#BB52FC",
+            "#F7E51D",
+            "#FAC476"
+        ]
+    },
+    {
+        "bgColor" : "#427BB8",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#FFCF40",
+            "#248E8A",
+            "#FFCF40",
+            "#42BA79",
+            "#F7601D"
+        ]
+    },
+    {
+        "bgColor" : "#C252CC",
+        "normalTextColor" : "#000000",
+        "hilightTextColors" : [
+            "#FFC14E",
+            "#7FCC66",
+            "#1DF7C4",
+            "#5252FC",
+            "#F7E51D"
+        ]
+    },
+    {
+        "bgColor" : "#4C0009",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#003153",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#0095B6",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#8F4B28",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#1A5599",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#B05923",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#81D8D0",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#9E2E24",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#E2AF42",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#407D52",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#CFB64A",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#9AB4CD",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#418AB4",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#8E2961",
+        "normalTextColor" : "#000000",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#101420",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#DAE3E6",
+        "normalTextColor" : "#000000",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#B8CE8E",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#4FA485",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#4692B9",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#C2C4C3",
+        "normalTextColor" : "#000000",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#6B331A",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#395260",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
+        ]
+    },
+    {
+        "bgColor" : "#88ADA6",
+        "normalTextColor" : "#FFFFFF",
+        "hilightTextColors" : [
+            "#564BD2",
+            "#EB299D",
+            "#58C04C",
+            "#FFE14C",
+            "#F25E3E"
         ]
     }
 ]
