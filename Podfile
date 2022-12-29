@@ -7,7 +7,7 @@ target 'KIkbsKeyBoard' do
 
   # Pods for KIkbsKeyBoard
   pod 'Then'
-  pod 'DeviceKit'
+  pod 'DeviceKit', '~> 5.0'
   pod 'SwifterSwift'
   pod 'Defaults'
   pod 'NoticeObserveKit'

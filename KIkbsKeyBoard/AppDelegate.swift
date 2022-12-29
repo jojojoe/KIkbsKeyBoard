@@ -13,7 +13,7 @@ import AppTrackingTransparency
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var mainVC: KIkbsMainVC = KIkbsMainVC()
+    var mainVC: KEkeyMainVC = KEkeyMainVC()
 
     func initMainVC() {
         let nav = UINavigationController.init(rootViewController: mainVC)

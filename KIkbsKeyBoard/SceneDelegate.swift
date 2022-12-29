@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var mainVC: KIkbsMainVC = KIkbsMainVC()
+    var mainVC: KEkeyMainVC = KEkeyMainVC()
 
     func initMainVC() {
         let nav = UINavigationController.init(rootViewController: mainVC)
@@ -61,6 +61,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func checkShowStoreVC(urlString: String) {
         if urlString == "KIKeykbsKeyBoard://\("Favorite")" {
 //            self.mainVC.present(KIkbsStoreVC(), animated: true, completion: nil)
+            /*
             if let item = self.mainVC.toolBar.currentItem, item.type != .keyborad {
                 let keyItem = self.mainVC.toolBar.list[2]
                 self.mainVC.toolBar.currentItem = keyItem
@@ -68,6 +69,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.mainVC.toolBar.collection.reloadData()
                 self.mainVC.view.endEditing(true)
             }
+             */
         }
     }
     

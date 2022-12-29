@@ -15,10 +15,10 @@ let Font_Avenir_Heavy = "Avenir-Heavy"
 public enum IAPType: String {
     case year = "IAP_id_year"
     case month = "IAP_id_month"
-    
+    case week = "IAP_id_week"
 }
 
-var AppName: String = "App_Name"
+
 var FeedbackEmail: String = ""
 var AppBundleID: String = "com.xxx"
 var IAPsharedSecret: String = ""

@@ -15,6 +15,9 @@
 		EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */; };
 		EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */; };
 		EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */; };
+		EB5EE3C02941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */; };
+		EB5EE3C32941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */; };
+		EB5EE3C62942DAAA0015B3BA /* KEkeyNeTextCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */; };
 		EB7A2B7726C4D7DB00F25D38 /* KIkbsMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */; };
 		EB7A2B7B26C4D81000F25D38 /* TEST.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7A26C4D81000F25D38 /* TEST.m */; };
 		EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */; };
@@ -60,6 +63,10 @@
 		EBAE32A426D78E9100FFC212 /* specialQuoteList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A326D78E9100FFC212 /* specialQuoteList.json */; };
 		EBAE32A626D78E9C00FFC212 /* specialEmojiStrList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */; };
 		EBAE32AA26D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */; };
+		EBBBA803293DDB5000211CCF /* KEkeyMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBA802293DDB5000211CCF /* KEkeyMainVC.swift */; };
+		EBBBA806293DFB9700211CCF /* KEkeyNeTransformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBA805293DFB9700211CCF /* KEkeyNeTransformVC.swift */; };
+		EBE60E2129447A3B004DF203 /* KEkeyNeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */; };
+		EBE60E2329448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60E2229448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift */; };
 		EBF8BCBC268EC32700DA318F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBB268EC32700DA318F /* AppDelegate.swift */; };
 		EBF8BCBE268EC32700DA318F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBD268EC32700DA318F /* SceneDelegate.swift */; };
 		EBF8BCC0268EC32700DA318F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCBF268EC32700DA318F /* ViewController.swift */; };
@@ -106,6 +113,9 @@
 		EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainToolBarBtn.swift; sourceTree = "<group>"; };
 		EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTransformVC.swift; sourceTree = "<group>"; };
 		EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTypeTransformView.swift; sourceTree = "<group>"; };
+		EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeSpecialTextVC.swift; sourceTree = "<group>"; };
+		EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeFavoriteStringVC.swift; sourceTree = "<group>"; };
+		EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeTextCardVC.swift; sourceTree = "<group>"; };
 		EB71229C27F15F22000F04D6 /* KIkkKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkkKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainVC.swift; sourceTree = "<group>"; };
 		EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkbsKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -155,6 +165,10 @@
 		EBAE32A326D78E9100FFC212 /* specialQuoteList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialQuoteList.json; sourceTree = "<group>"; };
 		EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialEmojiStrList.json; sourceTree = "<group>"; };
 		EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialStrLeftIndexView.swift; sourceTree = "<group>"; };
+		EBBBA802293DDB5000211CCF /* KEkeyMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyMainVC.swift; sourceTree = "<group>"; };
+		EBBBA805293DFB9700211CCF /* KEkeyNeTransformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeTransformVC.swift; sourceTree = "<group>"; };
+		EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeSettingVC.swift; sourceTree = "<group>"; };
+		EBE60E2229448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeInfoPagePreviewVC.swift; sourceTree = "<group>"; };
 		EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIkbsKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF8BCBB268EC32700DA318F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF8BCBD268EC32700DA318F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,12 +238,41 @@
 			isa = PBXGroup;
 			children = (
 				EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */,
-				EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */,
-				EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */,
-				EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */,
-				EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */,
 			);
 			path = TextTransform;
+			sourceTree = "<group>";
+		};
+		EB5EE3BE2941B8310015B3BA /* NeSpecialTextGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */,
+				EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */,
+				EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */,
+			);
+			path = NeSpecialTextGroup;
+			sourceTree = "<group>";
+		};
+		EB5EE3C12941D2A70015B3BA /* NeFavoriteStringGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */,
+				EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */,
+			);
+			path = NeFavoriteStringGroup;
+			sourceTree = "<group>";
+		};
+		EB5EE3C42942DA910015B3BA /* NeTextCardGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */,
+				EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */,
+				EB960C4F26DF793D00EDB86A /* KIkbsCardThemeColorBar.swift */,
+				EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */,
+				EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */,
+				EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */,
+				EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */,
+			);
+			path = NeTextCardGroup;
 			sourceTree = "<group>";
 		};
 		EB7A2B7426C4D7AA00F25D38 /* RootTree */ = {
@@ -254,7 +297,6 @@
 			children = (
 				EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */,
 				EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */,
-				EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */,
 				EB4E385926CB9B1500D1FE4D /* View */,
 			);
 			path = Main;
@@ -278,7 +320,6 @@
 				EB9407CD26F3819400CB4A66 /* textTransform_Font.json */,
 				EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */,
 				EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */,
-				EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */,
 			);
 			path = ToolStuff;
 			sourceTree = "<group>";
@@ -328,12 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */,
-				EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */,
-				EB960C4F26DF793D00EDB86A /* KIkbsCardThemeColorBar.swift */,
-				EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */,
-				EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */,
-				EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */,
-				EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */,
 			);
 			path = TextPicCard;
 			sourceTree = "<group>";
@@ -342,8 +377,6 @@
 			isa = PBXGroup;
 			children = (
 				EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */,
-				EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */,
-				EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */,
 			);
 			path = SpecialTextLib;
 			sourceTree = "<group>";
@@ -352,9 +385,52 @@
 			isa = PBXGroup;
 			children = (
 				EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */,
-				EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */,
 			);
 			path = KeyboardFavorite;
+			sourceTree = "<group>";
+		};
+		EBBBA801293DCC6A00211CCF /* NewMain */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBA802293DDB5000211CCF /* KEkeyMainVC.swift */,
+				EBE60E2429449065004DF203 /* NeStoreGroup */,
+				EBE60E1F29447A07004DF203 /* NeSettingGroup */,
+				EB5EE3C42942DA910015B3BA /* NeTextCardGroup */,
+				EB5EE3C12941D2A70015B3BA /* NeFavoriteStringGroup */,
+				EB5EE3BE2941B8310015B3BA /* NeSpecialTextGroup */,
+				EBBBA804293DFB6F00211CCF /* NeTransformGroup */,
+			);
+			path = NewMain;
+			sourceTree = "<group>";
+		};
+		EBBBA804293DFB6F00211CCF /* NeTransformGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBA805293DFB9700211CCF /* KEkeyNeTransformVC.swift */,
+				EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */,
+				EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */,
+				EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */,
+				EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */,
+			);
+			path = NeTransformGroup;
+			sourceTree = "<group>";
+		};
+		EBE60E1F29447A07004DF203 /* NeSettingGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */,
+				EBE60E2229448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift */,
+			);
+			path = NeSettingGroup;
+			sourceTree = "<group>";
+		};
+		EBE60E2429449065004DF203 /* NeStoreGroup */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */,
+				EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */,
+			);
+			path = NeStoreGroup;
 			sourceTree = "<group>";
 		};
 		EBF8BCAF268EC32700DA318F = {
@@ -380,6 +456,7 @@
 		EBF8BCBA268EC32700DA318F /* KIkbsKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				EBBBA801293DCC6A00211CCF /* NewMain */,
 				EBA00AAD27ED5EB600AB3CC2 /* KIkbsKeyBoard.entitlements */,
 				EB7A2B8026C4FF2400F25D38 /* ToolStuff */,
 				EB7A2B7526C4D7C500F25D38 /* Main */,
@@ -582,13 +659,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5EE3C02941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift in Sources */,
 				EB7A2B7B26C4D81000F25D38 /* TEST.m in Sources */,
+				EBE60E2129447A3B004DF203 /* KEkeyNeSettingVC.swift in Sources */,
 				EBA03FA526E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift in Sources */,
 				EB7A2B8226C4FF3900F25D38 /* ExtensionTool.swift in Sources */,
+				EB5EE3C32941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift in Sources */,
+				EBBBA806293DFB9700211CCF /* KEkeyNeTransformVC.swift in Sources */,
 				EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */,
 				EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */,
 				EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */,
 				EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */,
+				EBBBA803293DDB5000211CCF /* KEkeyMainVC.swift in Sources */,
 				EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */,
 				EBF8BCC0268EC32700DA318F /* ViewController.swift in Sources */,
 				EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */,
@@ -610,10 +692,12 @@
 				EBABA53126D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift in Sources */,
 				EB960C5026DF793D00EDB86A /* KIkbsCardThemeColorBar.swift in Sources */,
 				EB9407CC26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift in Sources */,
+				EBE60E2329448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift in Sources */,
 				EB8CD38526DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift in Sources */,
 				EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */,
 				EBAE32A026D7875500FFC212 /* KIkbsDataManager.swift in Sources */,
 				EB99D90426D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift in Sources */,
+				EB5EE3C62942DAAA0015B3BA /* KEkeyNeTextCardVC.swift in Sources */,
 				EBAE32AA26D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
