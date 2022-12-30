@@ -27,8 +27,13 @@ class KEkeyNeTransformVC: UIViewController, UITextViewDelegate {
     let resultTextView = DPTextView()
     let copyProImgV = UIImageView()
     
+    let contentViewTransView = KIkbsTextTypeTransformView()
+    let contentViewCenterView = KIkbsTextCenterTransformView()
+    let contentViewLeftRight = KIkbsTextLeftRightTransformView()
     
     var currentTransformItem: TextTranformItem? = KIkbsTextTransformManager.default.textTranformFontList.first
+    
+    var isCurrentPro = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +98,7 @@ extension KEkeyNeTransformVC {
         textInputView.font = UIFont(name: Font_AvenirNext_Medium, size: 16)
         textInputView.textColor = UIColor.darkText
         textInputView.text = ""
+        textInputView.placeholder = "Font"
         textInputView.delegate = self
         textInputView.inputAccessoryView = toolView
         textInputView.textContainerInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
@@ -126,6 +132,7 @@ extension KEkeyNeTransformVC {
         resultTextView.layer.cornerRadius = 10
         resultTextView.clipsToBounds = true
         
+        updateResultTextViewContent()
         
         //
         let copyBtn = UIButton()
@@ -148,7 +155,7 @@ extension KEkeyNeTransformVC {
             $0.right.equalTo(copyBtn.snp.right).offset(8)
             $0.width.height.equalTo(17)
         }
-        
+        copyProImgV.isHidden = true
         //
         let favoriteBtn = UIButton()
         favoriteBtn
@@ -201,7 +208,11 @@ extension KEkeyNeTransformVC {
 extension KEkeyNeTransformVC {
     func updateResultTextViewContent() {
         if let item = currentTransformItem {
-            let resultString = KIkbsTextTransformManager.default.processReplaceText(contentStr: textInputView.text, transformItem: item)
+            var originStr: String = textInputView.text
+            if textInputView.text == "" {
+                originStr = "Font"
+            }
+            let resultString = KIkbsTextTransformManager.default.processReplaceText(contentStr: originStr, transformItem: item)
             resultTextView.text = resultString
         }
     }
@@ -209,11 +220,26 @@ extension KEkeyNeTransformVC {
     func textViewDidChangeSelection(_ textView: UITextView) {
         updateResultTextViewContent()
     }
+    
+    func updateCurrentProStatus(isCurrentPro: Bool) {
+        self.isCurrentPro = isCurrentPro
+        if isCurrentPro {
+            copyProImgV.isHidden = false
+        } else {
+            copyProImgV.isHidden = true
+        }
+    }
 }
 
 extension KEkeyNeTransformVC {
     
     @objc func contentCopyBtnClick(sender: UIButton) {
+        let resultStr = resultTextView.text.replacingOccurrences(of: " ", with: "")
+        if resultStr.count == 0 {
+            ZKProgressHUD.showMessage("Please enter valid text.")
+            return
+        }
+
         UIPasteboard.general.string = resultTextView.text
         ZKProgressHUD.showSuccess("Copy successfully!")
     }
@@ -266,38 +292,54 @@ extension KEkeyNeTransformVC: JXPagingViewDelegate {
 
     func pagingView(_ pagingView: JXPagingView, initListAtIndex index: Int) -> JXPagingViewListViewDelegate {
         if index == 0 {
-            let contentView = KIkbsTextTypeTransformView()
-            contentView.itemClickBlock = {
-                [weak self] item in
+            
+            contentViewTransView.itemClickBlock = {
+                [weak self] item, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
                     self.currentTransformItem = item
                     self.updateResultTextViewContent()
+                    self.updateCurrentProStatus(isCurrentPro: ispro)
+                    self.contentViewCenterView.currentIndexPath = nil
+                    self.contentViewCenterView.collection.reloadData()
+                    self.contentViewLeftRight.currentIndexPath = nil
+                    self.contentViewLeftRight.collection.reloadData()
                 }
             }
-            return contentView
+            return contentViewTransView
         } else if index == 1 {
-            let contentView = KIkbsTextCenterTransformView()
-            contentView.itemClickBlock = {
-                [weak self] item in
+
+            
+            contentViewCenterView.itemClickBlock = {
+                [weak self] item, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
                     self.currentTransformItem = item
                     self.updateResultTextViewContent()
+                    self.updateCurrentProStatus(isCurrentPro: ispro)
+                    self.contentViewTransView.currentIndexPath = nil
+                    self.contentViewTransView.collection.reloadData()
+                    self.contentViewLeftRight.currentIndexPath = nil
+                    self.contentViewLeftRight.collection.reloadData()
                 }
             }
-            return contentView
+            return contentViewCenterView
         } else if index == 2 {
-            let contentView = KIkbsTextLeftRightTransformView()
-            contentView.itemClickBlock = {
-                [weak self] item in
+
+            contentViewLeftRight.itemClickBlock = {
+                [weak self] item, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
                     self.currentTransformItem = item
                     self.updateResultTextViewContent()
+                    self.updateCurrentProStatus(isCurrentPro: ispro)
+                    self.contentViewTransView.currentIndexPath = nil
+                    self.contentViewTransView.collection.reloadData()
+                    self.contentViewCenterView.currentIndexPath = nil
+                    self.contentViewCenterView.collection.reloadData()
                 }
             }
-            return contentView
+            return contentViewLeftRight
         }
 //        else if index == 3 {
 //            let contentView = KIkbsMorseCodeTransformView()

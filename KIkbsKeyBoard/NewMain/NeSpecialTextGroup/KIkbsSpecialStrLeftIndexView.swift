@@ -63,6 +63,15 @@ extension KIkbsSpecialStrLeftIndexView: UICollectionViewDataSource {
         } else {
             cell.updateSelectStatus(isSele: false)
         }
+        if bundle.isPro {
+            if KIkbsPurchaseManager.default.inSubscription {
+                cell.proImgV.isHidden = true
+            } else {
+                cell.proImgV.isHidden = false
+            }
+        } else {
+            cell.proImgV.isHidden = true
+        }
         
         return cell
     }
@@ -114,6 +123,7 @@ extension KIkbsSpecialStrLeftIndexView: UICollectionViewDelegate {
 
 class KIkbsSpecialLeftColleCell: UICollectionViewCell {
     let nameLabel = UILabel()
+    let proImgV = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -134,6 +144,18 @@ class KIkbsSpecialLeftColleCell: UICollectionViewCell {
         nameLabel.snp.makeConstraints {
             $0.top.right.bottom.left.equalToSuperview()
         }
+        
+        //
+        proImgV
+            .image("ic_pro")
+            .contentMode(.scaleAspectFit)
+            .backgroundColor(UIColor.clear)
+            .adhere(toSuperview: contentView)
+        proImgV.snp.makeConstraints {
+            $0.top.right.equalToSuperview()
+            $0.width.height.equalTo(17)
+        }
+        
     }
     
     func updateSelectStatus(isSele: Bool) {

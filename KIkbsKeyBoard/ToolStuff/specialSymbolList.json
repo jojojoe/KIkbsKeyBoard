@@ -296,7 +296,7 @@
             "👥",
             "🫂"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "👀👄",
@@ -390,7 +390,7 @@
             "📠",
             "🤳"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🚳⛔",
@@ -546,7 +546,7 @@
             "🦐",
             "🦑"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "💐🌸",
@@ -574,7 +574,7 @@
             "🍂",
             "🍃"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🌍🌕",
@@ -626,7 +626,7 @@
             "🌟",
             "🌊"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🍇🍈",
@@ -750,7 +750,7 @@
             "🍴",
             "🥄"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🧗🤺",
@@ -868,7 +868,7 @@
             "🎬",
             "🏹"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🏞️🏡",
@@ -1011,7 +1011,7 @@
             "🛅",
             "🧭"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "💌🎈",
@@ -1124,7 +1124,7 @@
             "🔮",
             "🚩"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "♥️📣",
@@ -1169,7 +1169,7 @@
             "📵",
             "🔞"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "☢️⚛️",
@@ -1236,7 +1236,7 @@
             "™️",
             "〽️"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "0️⃣1️⃣",
@@ -1362,7 +1362,7 @@
             "🔳",
             "🔲"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🐁🐂",
@@ -1380,7 +1380,7 @@
             "🐕",
             "🐖"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🕛⌛",
@@ -1417,7 +1417,7 @@
             "⏲",
             "🕰"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "💘💓",
@@ -1436,7 +1436,7 @@
             "💞",
             "💟"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "⬆⬇",
@@ -1463,7 +1463,7 @@
             "🔜",
             "🔝"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "❤☢",
@@ -1606,7 +1606,7 @@
             "▎",
             "▏"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     
     {
@@ -1791,7 +1791,7 @@
             "✙",
             "♆"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "•﹫",
@@ -2041,7 +2041,7 @@
             "‰",
             "‱"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "㊣㊙",
@@ -2089,7 +2089,7 @@
             "㉿",
             "囍"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "♔♕",
@@ -2265,7 +2265,7 @@
             "⇩",
             "⇪"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "➀➁",
@@ -2411,7 +2411,7 @@
             "ⅾ",
             "ⅿ"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "▤┲",
@@ -2574,7 +2574,7 @@
             "▮",
             "▯"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "㋀㏠",
@@ -2657,7 +2657,7 @@
             "☷",
             "☯"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "π∀∂",
@@ -2840,7 +2840,7 @@
             "⋽",
             "⋾"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "⁰¹",
@@ -2890,7 +2890,7 @@
             "ₛ",
             "ₜ"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "ΓΔξ",
@@ -2944,7 +2944,7 @@
             "ψ",
             "ω"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "БДБ",
@@ -3016,7 +3016,7 @@
             "ю",
             "я"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "āōㄎ",
@@ -3091,7 +3091,7 @@
             "ㄨ",
             "ㄩ"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "㊎㊍",
@@ -3194,7 +3194,7 @@
             "㊈",
             "㊉"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "ぁぃ",
@@ -3398,7 +3398,7 @@
             "ㇾ",
             "ㇿ"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "🏳️‍🌈🏳️‍⚧️",
@@ -3666,7 +3666,7 @@
             "🏁",
             "🚩"
         ],
-        "isPro" : true
+        "isPro" : false
     }
     
 ]

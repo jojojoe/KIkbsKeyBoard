@@ -34,13 +34,12 @@ class KEkeyNeSettingVC: UIViewController {
  
         let privacy = KIkbsSettingItem(iconImgName: "privacy", titleName: "Privacy Policy")
         let feedback = KIkbsSettingItem(iconImgName: "feed", titleName: "Feedback")
-        let restore = KIkbsSettingItem(iconImgName: "restore", titleName: "Restore")
-        let keyboardAccest = KIkbsSettingItem(iconImgName: "keyborad", titleName: "Keyborad setting")
+        let keyboardAccest = KIkbsSettingItem(iconImgName: "keyborad", titleName: "Keyborad Setting")
         let subscribe = KIkbsSettingItem(iconImgName: "subscribe", titleName: "Subscribe Now")
         if KIkbsPurchaseManager.default.inSubscription {
-            list = [terms, privacy, feedback, restore, keyboardAccest]
+            list = [terms, privacy, feedback, keyboardAccest]
         } else {
-            list = [terms, privacy, feedback, restore, keyboardAccest, subscribe]
+            list = [terms, privacy, feedback, keyboardAccest, subscribe]
         }
     }
     
@@ -173,8 +172,6 @@ extension KEkeyNeSettingVC: UICollectionViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         } else if item.iconImgName == "feed" {
             showFeedback()
-        } else if item.iconImgName == "restore" {
-            KIkbsPurchaseManager.default.restore()
         } else if item.iconImgName == "keyborad" {
             let urlString = "App-Prefs:root=General&path=Keyboard"
             if let url = URL(string: urlString) {

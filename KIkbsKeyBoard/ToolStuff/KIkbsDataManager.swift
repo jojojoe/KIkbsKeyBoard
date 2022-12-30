@@ -80,8 +80,8 @@ class KIkbsDataManager: NSObject {
     
     func loadData() {
         
-        let shape1Bundle = SpecialStrBundle.init(titleName: "Cute", specialStrList: komojiArray, isPro: true)
-        let shape2Bundle = SpecialStrBundle.init(titleName: "Cartoon", specialStrList: komoji2Array, isPro: true)
+        let shape1Bundle = SpecialStrBundle.init(titleName: "Cute", specialStrList: komojiArray, isPro: false)
+        let shape2Bundle = SpecialStrBundle.init(titleName: "Cartoon", specialStrList: komoji2Array, isPro: false)
         specialShapeList = [shape1Bundle, shape2Bundle]
         textCardThemeNormalFontList = [Font_Avenir_Heavy, Font_AvenirNext_Medium]
         textCardThemeHilightFontList = ["KohinoorGujarati-Bold", "Menlo-Regular", "MyanmarSangamMN-Bold", "NotoSansMyanmar-Regular", "NotoSansOriya-Bold"]

@@ -223,6 +223,46 @@ class KIkbsStoreVC: UIViewController {
         infoLabel3.font = UIFont(name: "Futura-CondensedExtraBold", size: 12)
         infoLabel3.text = "(๑>◡<๑) (⺻▽⺻) (❁´▽`❁) ( >﹏<。)"
         
+        //
+//        let andlabel = UILabel()
+//        andlabel.textColor = UIColor.lightGray
+//        andlabel.adhere(toSuperview: bottomCanvasView)
+//        andlabel.snp.makeConstraints {
+//            $0.centerX.equalToSuperview().offset(-24)
+//            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-10)
+//            $0.width.height.greaterThanOrEqualTo(10)
+//        }
+//        andlabel.numberOfLines = 0
+//        andlabel.textAlignment = .center
+//        andlabel.font = UIFont(name: "Futura-CondensedExtraBold", size: 12)
+//        andlabel.text = "&"
+        //
+        let subscriNoticeBtn = UIButton()
+        subscriNoticeBtn.setTitleColor(UIColor.lightGray, for: .normal)
+        subscriNoticeBtn.setTitle("Subscription Notice", for: .normal)
+        subscriNoticeBtn.adhere(toSuperview: bottomCanvasView)
+        subscriNoticeBtn.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-10)
+            $0.width.height.greaterThanOrEqualTo(10)
+        }
+        subscriNoticeBtn.titleLabel?.font = UIFont(name: "Futura-CondensedExtraBold", size: 12)
+        subscriNoticeBtn.addTarget(self, action: #selector(subscriNoticeBtnAction(sender: )), for: .touchUpInside)
+        
+        //
+        let restoreBtn = UIButton()
+        restoreBtn.setTitleColor(UIColor.lightGray, for: .normal)
+        restoreBtn.setTitle("Restore", for: .normal)
+        restoreBtn.adhere(toSuperview: bottomCanvasView)
+        restoreBtn.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(subscriNoticeBtn.snp.top).offset(-2)
+            $0.width.height.greaterThanOrEqualTo(10)
+        }
+        restoreBtn.titleLabel?.font = UIFont(name: "Futura-CondensedExtraBold", size: 12)
+        restoreBtn.addTarget(self, action: #selector(restoreAction(sender: )), for: .touchUpInside)
+        
+        
         
     }
     func setupContentBtns() {
@@ -230,7 +270,12 @@ class KIkbsStoreVC: UIViewController {
         subBtnWeek.addTarget(self, action: #selector(weekSbuBtnClick(sender: )), for: .touchUpInside)
         subBtnWeek.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(bottomCanvasView.snp.centerY)
+            
+            if Device.current.diagonal <= 4.7 || Device.current.diagonal >= 7.9 {
+                $0.top.equalTo(bottomCanvasView.snp.centerY).offset(-15)
+            } else {
+                $0.top.equalTo(bottomCanvasView.snp.centerY)
+            }
             $0.left.equalToSuperview().offset(34)
             $0.height.equalTo(60)
         }
@@ -250,7 +295,12 @@ class KIkbsStoreVC: UIViewController {
         subBtnMonth.addTarget(self, action: #selector(monthSbuBtnClick(sender: )), for: .touchUpInside)
         subBtnMonth.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(subBtnWeek.snp.bottom).offset(30)
+            
+            if Device.current.diagonal <= 4.7 || Device.current.diagonal >= 7.9 {
+                $0.top.equalTo(subBtnWeek.snp.bottom).offset(15)
+            } else {
+                $0.top.equalTo(subBtnWeek.snp.bottom).offset(30)
+            }
             $0.width.equalTo(subBtnWeek.snp.width)
             $0.height.equalTo(60)
         }
@@ -269,7 +319,12 @@ class KIkbsStoreVC: UIViewController {
         subBtnYear.addTarget(self, action: #selector(yearSubBtnClick(sender: )), for: .touchUpInside)
         subBtnYear.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(subBtnMonth.snp.bottom).offset(30)
+            
+            if Device.current.diagonal <= 4.7 || Device.current.diagonal >= 7.9 {
+                $0.top.equalTo(subBtnMonth.snp.bottom).offset(15)
+            } else {
+                $0.top.equalTo(subBtnMonth.snp.bottom).offset(30)
+            }
             $0.width.equalTo(subBtnMonth.snp.width)
             $0.height.equalTo(60)
         }
@@ -283,8 +338,30 @@ class KIkbsStoreVC: UIViewController {
         subBtnYear.setTitleColor(.black, for: .normal)
         subBtnYear.setBackgroundColor(UIColor(hexString: "FCAFCF")!, for: .normal)
         subBtnYear.titleLabel?.font = UIFont(name: "Futura-CondensedExtraBold", size: 15)
+        
+         
+        
     }
 
+}
+
+extension KIkbsStoreVC {
+    
+    func purchaseOrderIAP(iapType: IAPType) {
+        KIkbsPurchaseManager.default.order(iapType: iapType, source: "unknown", page: "", isInTest: false, success: {
+            [weak self] in
+            guard let `self` = self else {return}
+            
+            let status = KIkbsPurchaseManager.default.inSubscription
+            debugPrint("purchase status : \(status)")
+            
+            if self.navigationController != nil {
+                self.navigationController?.popViewController()
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        })
+    }
 }
 
 extension KIkbsStoreVC {
@@ -316,11 +393,7 @@ extension KIkbsStoreVC {
             guard let `self` = self else {return}
             DispatchQueue.main.async {
                 HUD.hide()
-                NotificationCenter.default.post(
-                    name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success),
-                    object: nil,
-                    userInfo: nil
-                )
+
                 if self.navigationController != nil {
                     self.navigationController?.popViewController()
                 } else {
@@ -330,24 +403,9 @@ extension KIkbsStoreVC {
         }
     }
     
-    func purchaseOrderIAP(iapType: IAPType) {
-        KIkbsPurchaseManager.default.order(iapType: iapType, source: "unknown", page: "", isInTest: false, success: {
-            [weak self] in
-            guard let `self` = self else {return}
-            
-            let status = KIkbsPurchaseManager.default.inSubscription
-            print("purchase status : \(status)")
-            NotificationCenter.default.post(
-                name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success),
-                object: nil,
-                userInfo: nil
-            )
-            if self.navigationController != nil {
-                self.navigationController?.popViewController()
-            } else {
-                self.dismiss(animated: true, completion: nil)
-            }
-        })
+    @objc func subscriNoticeBtnAction(sender: UIButton) {
+        
     }
+    
 
 }

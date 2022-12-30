@@ -22,7 +22,7 @@ class KEkeyNeSpecialTextVC: UIViewController, UITextViewDelegate {
     let textInputView = DPTextView()
     var toolView = UIView()
     var hideButton = UIButton()
-    let copyProImgV = UIImageView()
+//    let copyProImgV = UIImageView()
     let topBar = UIView()
     
     
@@ -117,13 +117,13 @@ class KEkeyNeSpecialTextVC: UIViewController, UITextViewDelegate {
         copyBtn.addTarget(self, action: #selector(copyTextButtonClick(button: )), for: .touchUpInside)
         //
         
-        copyProImgV.image("ic_pro")
-        copyProImgV.adhere(toSuperview: view)
-        copyProImgV.snp.makeConstraints {
-            $0.top.equalTo(copyBtn.snp.top).offset(-8)
-            $0.right.equalTo(copyBtn.snp.right).offset(8)
-            $0.width.height.equalTo(17)
-        }
+//        copyProImgV.image("ic_pro")
+//        copyProImgV.adhere(toSuperview: view)
+//        copyProImgV.snp.makeConstraints {
+//            $0.top.equalTo(copyBtn.snp.top).offset(-8)
+//            $0.right.equalTo(copyBtn.snp.right).offset(8)
+//            $0.width.height.equalTo(17)
+//        }
         
         //
         let favoriteBtn = UIButton()
@@ -180,6 +180,13 @@ extension KEkeyNeSpecialTextVC {
     
     @objc func copyTextButtonClick(button: UIButton) {
         self.textInputView.resignFirstResponder()
+        
+        let resultStr = textInputView.text.replacingOccurrences(of: " ", with: "")
+        if resultStr.count == 0 {
+            ZKProgressHUD.showMessage("Please enter valid text.")
+            return
+        }
+        
         UIPasteboard.general.string = textInputView.text
         ZKProgressHUD.showSuccess("Copy successfully!")
     }

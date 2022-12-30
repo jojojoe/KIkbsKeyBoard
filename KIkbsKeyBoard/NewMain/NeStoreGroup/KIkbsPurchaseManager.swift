@@ -43,9 +43,9 @@ class KIkbsPurchaseManager {
     public let iapTypeList: [IAPType] = [.year, .month]
 
     var inSubscription: Bool {
-        if UIApplication.shared.inferredEnvironment == .debug && test {
-            return true
-        }
+//        if UIApplication.shared.inferredEnvironment == .debug && test {
+//            return true
+//        }
         guard let receiptInfo = receiptInfo else { return false }
 
         let subscriptionIDList = Set([IAPType.year.rawValue, IAPType.month.rawValue])
@@ -62,8 +62,7 @@ class KIkbsPurchaseManager {
                 
                  debugPrint("preMonth = \(preMonth), preHalfYear = \(preHalfYear), preYear = \(preYear)")
             } else {
-                 
-
+                
             }
             return inPurchase
         case .expired, .notPurchased:
@@ -100,23 +99,18 @@ class KIkbsPurchaseManager {
                 self.verify({ receipt in
                     let status = self.inSubscription
                     if status {
-                        if let vis = UIApplication.rootController?.visibleVC {
-                            Alert.message("Restore Success", success: {
-                                success?()
-                            })
-                        } else {
-                            Alert.message("Restore Success", success: {
-                                success?()
-                            })
-                        }
-                        
+                        Alert.message("The subscription was restored successfully!", success: {
+                            success?()
+                        })
+                        // push noti
+                        NotificationCenter.default.post(
+                            name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success),
+                            object: nil,
+                            userInfo: nil
+                        )
                         debugPrint("Restore Success: \(results.restoredPurchases)")
                     } else {
-                        if let vis = UIApplication.rootController?.visibleVC {
-                            Alert.error("Nothing to Restore")
-                        } else {
-                            Alert.error("Nothing to Restore")
-                        }
+                        Alert.error("Nothing to Restore")
                     }
                 })
             } else {
@@ -140,13 +134,15 @@ class KIkbsPurchaseManager {
                     HUD.hide()
                     // TODO: Month halfyear adjust token
                     var eventString: String
-                    
-
                     let price = purchaseDetail.product.price.doubleValue
                     let productId = purchaseDetail.productId
                     let currencyCode = purchaseDetail.product.priceLocale.currencyCode ?? "USD"
-                    
-
+                    // push noti
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success),
+                        object: nil,
+                        userInfo: nil
+                    )
                     success?()
                 }
 

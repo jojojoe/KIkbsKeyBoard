@@ -302,8 +302,8 @@ extension KEkeyNeFavoriteStringVC {
 
 extension KEkeyNeFavoriteStringVC {
     @objc func addNewGroupNameBtnClick(sender: UIButton) {
-        let title = "Text Entry Alert"
-        let message = "A message should be a short, complete sentence."
+        let title = "Enter a group name"
+        let message = ""
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
         

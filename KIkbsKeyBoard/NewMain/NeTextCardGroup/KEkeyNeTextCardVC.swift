@@ -9,7 +9,7 @@ import UIKit
 import JXPagingView
 import JXSegmentedView
 import Photos
-
+import DeviceKit
 
 class KEkeyNeTextCardVC: UIViewController {
 
@@ -35,9 +35,15 @@ class KEkeyNeTextCardVC: UIViewController {
     
     var waterOverlayer = KIkbsCardWatermarkOverlayer()
     let hideButton = UIButton()
-    var watermarkTextFeild = UITextField()
+//    var watermarkTextFeild = UITextField()
+    let textinputView = UITextView()
     var watermarkTextFeildToolView: UIView!
     let topBar = UIView()
+    
+    let textinputBgView = UIView()
+    let textinputContentView = UIView()
+    let textinputDeleteFavoBtn = UIButton(type: .custom)
+    let textinputSaveFavoBtn = UIButton(type: .custom)
     
     
     override func viewDidLoad() {
@@ -370,36 +376,157 @@ extension KEkeyNeTextCardVC {
     
     func resetupTextFeild() {
         //
-        watermarkTextFeildToolView = UIView(frame: CGRect(x: 0, y: 100, width: UIScreen.width, height: 44))
-        watermarkTextFeildToolView.backgroundColor = .white
-        view.addSubview(watermarkTextFeildToolView)
-        //
-        hideButton
-            .addTarget(self, action: #selector(watermarkTextFeildHiddenBtnClick(sender:)), for: .touchUpInside)
-        hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
-//        hideButton.setTitle("Okey", for: .normal)
-        hideButton.setTitleColor(UIColor.init(hexString: "#000000"), for: .normal)
-        
-        watermarkTextFeildToolView.addSubview(hideButton)
-        hideButton.snp.makeConstraints {
-            $0.height.equalTo(40)
-            $0.width.greaterThanOrEqualTo(1)
-            $0.right.equalTo(-20)
-            $0.centerY.equalToSuperview()
-        }
-        
-        //
-        watermarkTextFeildToolView.addSubview(watermarkTextFeild)
-        watermarkTextFeild.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.left.equalTo(30)
-            $0.height.equalTo(38)
-            $0.right.equalTo(-80)
-        }
-        watermarkTextFeild.inputAccessoryView =  watermarkTextFeildToolView
-        watermarkTextFeild.delegate = self
+//        watermarkTextFeildToolView = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.width, height: 44))
+//        watermarkTextFeildToolView.backgroundColor = .white
+//        view.addSubview(watermarkTextFeildToolView)
+//        //
+//        hideButton
+//            .addTarget(self, action: #selector(watermarkTextFeildHiddenBtnClick(sender:)), for: .touchUpInside)
+//        hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
+////        hideButton.setTitle("Okey", for: .normal)
+//        hideButton.setTitleColor(UIColor.init(hexString: "#000000"), for: .normal)
+//
+//        watermarkTextFeildToolView.addSubview(hideButton)
+//        hideButton.snp.makeConstraints {
+//            $0.height.equalTo(40)
+//            $0.width.greaterThanOrEqualTo(1)
+//            $0.right.equalTo(-20)
+//            $0.centerY.equalToSuperview()
+//        }
+//
+//        //
+//        watermarkTextFeildToolView.addSubview(watermarkTextFeild)
+//        watermarkTextFeild.snp.makeConstraints {
+//            $0.centerY.equalToSuperview()
+//            $0.left.equalTo(30)
+//            $0.height.equalTo(38)
+//            $0.right.equalTo(-80)
+//        }
+//        watermarkTextFeild.inputAccessoryView =  watermarkTextFeildToolView
+//        watermarkTextFeild.delegate = self
     }
     
+    func setupTextInputContentView() {
+        
+        textinputBgView.isHidden = true
+        textinputBgView.backgroundColor(UIColor.black.withAlphaComponent(0.5))
+        textinputBgView
+            .adhere(toSuperview: self.view)
+        textinputBgView.snp.makeConstraints {
+            $0.left.top.bottom.right.equalToSuperview()
+        }
+        //
+        let textinputBgCloseBtn = UIButton(type: .custom)
+        textinputBgCloseBtn
+            .adhere(toSuperview: textinputBgView)
+        textinputBgCloseBtn.addTarget(self, action: #selector(textinputBgCloseBtnClick(sender:)), for: .touchUpInside)
+        textinputBgCloseBtn.snp.makeConstraints {
+            $0.left.right.top.bottom.equalToSuperview()
+        }
+        //
+        //
+        textinputContentView
+            .backgroundColor(UIColor.black)
+            .adhere(toSuperview: textinputBgView)
+        var textContentTop: CGFloat = 100
+        
+        if Device.current.diagonal == 4.7 {
+            textContentTop = 30
+        }
+        textinputContentView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(textContentTop)
+            $0.width.equalTo(270)
+            $0.height.equalTo(330)
+        }
+        //
+        let contentColorV = UIView()
+        textinputContentView.addSubview(contentColorV)
+        contentColorV.backgroundColor(UIColor(hexString: "F2F2F7")!)
+        contentColorV.layer.cornerRadius = 10
+        contentColorV.clipsToBounds(true)
+        contentColorV.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.top.equalTo(2)
+            $0.left.equalTo(2)
+        }
+        //
+        let textinputContentCloseBtn = UIButton()
+        textinputContentCloseBtn.setImage(UIImage(named: "ic_pop_close"), for: .normal)
+        textinputContentView.addSubview(textinputContentCloseBtn)
+        textinputContentCloseBtn.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.right.equalToSuperview().offset(-16)
+            $0.width.height.equalTo(36)
+        }
+        textinputContentCloseBtn.addTarget(self, action: #selector(textinputBgCloseBtnClick(sender:)), for: .touchUpInside)
+        
+        // tool view
+        view.addSubview(watermarkTextFeildToolView)
+        watermarkTextFeildToolView.backgroundColor = UIColor(hexString: "#FFFFFF")
+        watermarkTextFeildToolView.frame = CGRect(x: 0, y: -100, width: UIScreen.main.bounds.width, height: 40)
+        
+        // tool keyborder hiden view
+        hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
+//        hideButton.setTitle("Done", for: .normal)
+        hideButton.setTitleColor(UIColor.systemBlue, for: .normal)
+        hideButton.backgroundColor = UIColor.clear
+        hideButton.addTarget(self, action: #selector(watermarkTextFeildHiddenBtnClick(sender:)), for: .touchUpInside)
+        watermarkTextFeildToolView.addSubview(hideButton)
+        hideButton.snp.makeConstraints { make in
+            make.width.height.equalTo(40)
+            make.right.equalTo(-10)
+            make.centerY.equalToSuperview()
+        }
+        //
+        
+        //
+        textinputView.returnKeyType = .default
+        textinputView.inputAccessoryView = watermarkTextFeildToolView
+        textinputView.delegate = self
+        textinputView.textColor = UIColor.darkGray
+        textinputView.font = UIFont(name: "AvenirNext-Medium", size: 14)
+        textinputView.placeholder = "Input content..."
+        textinputView.adhere(toSuperview: textinputContentView)
+        textinputView.snp.makeConstraints {
+            $0.left.equalTo(16)
+            $0.top.equalTo(textinputContentCloseBtn.snp.bottom).offset(5)
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(-80)
+        }
+        textinputView.layer.borderColor = UIColor.black.cgColor
+        textinputView.layer.borderWidth = 1.5
+        //
+ 
+        //
+        textinputSaveFavoBtn.titleLabel?.font = UIFont(name: "Futura-CondensedExtraBold", size: 18)
+        textinputSaveFavoBtn
+            .title("OK")
+            .titleColor(UIColor.black)
+            .backgroundColor(UIColor(hexString: "FBDF40")!)
+            .adhere(toSuperview: textinputContentView)
+        textinputSaveFavoBtn.layer.borderWidth = 1.5
+        textinputSaveFavoBtn.layer.shadowColor = UIColor.black.cgColor
+        textinputSaveFavoBtn.layer.shadowRadius = 0
+        textinputSaveFavoBtn.layer.shadowOffset = CGSize(width: -2, height: 2)
+        textinputSaveFavoBtn.layer.shadowOpacity = 1
+        textinputSaveFavoBtn.snp.makeConstraints {
+            $0.centerY.equalTo(textinputDeleteFavoBtn.snp.centerY)
+            $0.right.equalToSuperview().offset(-16)
+            $0.height.equalTo(44)
+            $0.left.equalTo(textinputDeleteFavoBtn.snp.right).offset(16)
+        }
+        textinputSaveFavoBtn.addTarget(self, action: #selector(textinputSaveFavoBtnClick(sender:)), for: .touchUpInside)
+         
+    }
+    
+}
+
+extension KEkeyNeTextCardVC {
+    @objc func textinputBgCloseBtnClick(sender: UIButton) {
+        textinputBgView.isHidden = true
+        hideButtonClick(sender: hideButton)
+    }
 }
 
 extension KEkeyNeTextCardVC: JXPagingViewDelegate {

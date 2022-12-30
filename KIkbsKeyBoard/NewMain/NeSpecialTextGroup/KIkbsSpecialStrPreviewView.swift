@@ -187,6 +187,16 @@ extension KIkbsSpecialStrPreviewView: UITableViewDelegate {
         let header = tableView.dequeueReusableHeaderFooterView(withClass: KIkbsSpecialRightTabHeader.self)
         header.nameLabel.text = bundle.titleName
         header.proImgV.isHidden = !bundle.isPro
+        if bundle.isPro {
+            if KIkbsPurchaseManager.default.inSubscription {
+                header.proImgV.isHidden = true
+            } else {
+                header.proImgV.isHidden = false
+            }
+        } else {
+            header.proImgV.isHidden = true
+        }
+
         return header
         
     }

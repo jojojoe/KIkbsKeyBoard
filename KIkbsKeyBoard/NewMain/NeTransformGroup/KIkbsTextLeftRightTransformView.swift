@@ -13,12 +13,12 @@ class KIkbsTextLeftRightTransformView: UIView {
     var listViewDidScrollCallback: ((UIScrollView) -> ())?
     var collection: UICollectionView!
     var fontTypeList: [TextTranformItem] = []
-    var itemClickBlock: ((TextTranformItem)->Void)?
-    
+    var itemClickBlock: ((TextTranformItem, Bool)->Void)?
+    var currentIndexPath: IndexPath?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        addSubscribeNotic()
         loadData()
         setupView()
     }
@@ -30,6 +30,15 @@ class KIkbsTextLeftRightTransformView: UIView {
     func loadData() {
 
         fontTypeList = KIkbsTextTransformManager.default.textTranformLeftRightAddList
+    }
+    
+    func addSubscribeNotic() {
+        //
+        NotificationCenter.default.addObserver(self, selector: #selector(updateSubscribeSuccessStatus(noti: )), name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success), object: nil)
+    }
+    
+    @objc func updateSubscribeSuccessStatus(noti: Notification) {
+        collection.reloadData()
     }
     
     func setupView() {
@@ -74,6 +83,21 @@ extension KIkbsTextLeftRightTransformView: UICollectionViewDataSource {
         
         let item = fontTypeList[indexPath.item]
         cell.textLabel.text = item.previewStr
+        if indexPath.item >= 4 {
+            if KIkbsPurchaseManager.default.inSubscription {
+                cell.vipImgV.isHidden = true
+            } else {
+                cell.vipImgV.isHidden = false
+            }
+        } else {
+            cell.vipImgV.isHidden = true
+        }
+        
+        if currentIndexPath?.item == indexPath.item {
+            cell.layer.borderWidth = 1.5
+        } else {
+            cell.layer.borderWidth = 0
+        }
         
         return cell
     }
@@ -120,7 +144,18 @@ extension KIkbsTextLeftRightTransformView: UICollectionViewDelegateFlowLayout {
 extension KIkbsTextLeftRightTransformView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = fontTypeList[indexPath.item]
-        itemClickBlock?(item)
+        var isPro = false
+        if indexPath.item >= 4 {
+            if KIkbsPurchaseManager.default.inSubscription {
+                
+            } else {
+                isPro = true
+            }
+        }
+        currentIndexPath = indexPath
+        collectionView.reloadData()
+        
+        itemClickBlock?(item, isPro)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

@@ -99,7 +99,7 @@
             "( ⌒⃘ ◞ ˙ ◟ ⌒⃘ ",
             "(，_ゝ۞)"
         ],
-        "isPro" : true
+        "isPro" : false
     },
     {
         "titleName" : "(΄ಢ◞౪◟ಢ‵)",
@@ -137,7 +137,7 @@
              "ヽ(́◕◞౪◟◕‵)ﾉ",
              "(V)(́◉◞౪◟◉‵)(V)"
         ],
-        "isPro" : false
+        "isPro" : true
     },
     {
         "titleName" : "ლ(❛◡❛✿)ლ",
@@ -179,7 +179,7 @@
             "(ÒωÓױ)",
             "(́◕◞ㆀ◟◕`)"
         ],
-        "isPro" : false
+        "isPro" : true
     },
     {
         "titleName" : "(;´༎ຶД༎ຶ`)",
@@ -247,7 +247,7 @@
             "Σ┗(＠ロ＠;)┛",
             "Σヽ(ﾟД ﾟ; )ﾉ",
         ],
-        "isPro" : false
+        "isPro" : true
     },
     {
         "titleName" : "( ´∀｀)σ",
