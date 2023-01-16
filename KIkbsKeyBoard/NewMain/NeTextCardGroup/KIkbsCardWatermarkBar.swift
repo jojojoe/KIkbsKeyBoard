@@ -23,18 +23,28 @@ class KIkbsCardWatermarkBar: UIView {
     
     var enterWaterMarkClickBlock: (()->Void)?
     
-    var selectWaterMarkClickBlock: ((Int, String)->Void)?
+    var selectWaterMarkClickBlock: ((Int, String, Bool)->Void)?
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        addSubscribeNotic()
         loadData()
         setupView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    func addSubscribeNotic() {
+        //
+        NotificationCenter.default.addObserver(self, selector: #selector(updateSubscribeSuccessStatus(noti: )), name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success), object: nil)
+    }
+    
+    @objc func updateSubscribeSuccessStatus(noti: Notification) {
+        collection.reloadData()
     }
     
     func loadData() {
@@ -138,6 +148,16 @@ extension KIkbsCardWatermarkBar: UICollectionViewDataSource {
                 cell.selectImgV.layer.borderColor = UIColor(hexString: "000000")!.cgColor
             }
         }
+        if KIkbsPurchaseManager.default.inSubscription {
+            cell.vipImgV.isHidden = true
+        } else {
+            if indexPath.item >= 2 {
+                cell.vipImgV.isHidden = false
+            } else {
+                cell.vipImgV.isHidden = true
+            }
+        }
+        
         
         return cell
     }
@@ -178,7 +198,11 @@ extension KIkbsCardWatermarkBar: UICollectionViewDelegate {
         let item = list[indexPath.item]
         currentWaterItemIndex = indexPath.item
         collectionView.reloadData()
-        selectWaterMarkClickBlock?(indexPath.item, item)
+        var isPro = false
+        if indexPath.item >= 2 {
+            isPro = true
+        }
+        selectWaterMarkClickBlock?(indexPath.item, item, isPro)
         
     }
     

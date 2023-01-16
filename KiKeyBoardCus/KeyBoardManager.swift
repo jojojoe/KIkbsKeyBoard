@@ -1,17 +1,16 @@
 //
-//  KIDataManager.swift
-//  KIkkKeyBoard
+//  KeyBoardManager.swift
+//  KiKeyBoardCus
 //
-//  Created by JOJO on 2022/3/24.
+//  Created by JOJO on 2023/1/11.
 //
 
 import UIKit
 
-class KIDataManager: UIView {
 
-    static let `default` = KIDataManager()
-//    var contentTitleStrList: [String] = []
-    
+class KeyBoardManager: UIView {
+
+    static let `default` = KeyBoardManager()
     
  
     func loadHostFavoriteTitleList(completion: @escaping (([KeyboardFavoriteGroup])->Void)) {
@@ -22,17 +21,15 @@ class KIDataManager: UIView {
             guard let `self` = self else {return}
             DispatchQueue.main.async {
                 titleGroupList.append(contentsOf: groupList)
-//                let contentTitleStrList = titleGroupList.compactMap({
-//                    return $0.groupName
-//                })
+
                 completion(titleGroupList)
             }
         }
         
     }
-    
-    func loadHostFavoriteContent(titleName: String, completion: @escaping (([String])->Void)) {
-        KIkbsKeboardFavoriteDB.default.selectFavoriteContentList(groupNameKeyOnly: titleName) {
+     
+    func loadHostFavoriteContent(keyName: String, completion: @escaping (([String])->Void)) {
+        KIkbsKeboardFavoriteDB.default.selectFavoriteContentList(groupNameKeyOnly: keyName) {
             [weak self] fitems in
             guard let `self` = self else {return}
             let contentStrList = fitems.compactMap({
@@ -83,5 +80,19 @@ extension UIColor {
         if trans > 1 { trans = 1 }
 
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: trans)
+    }
+}
+
+public class Once {
+    var already: Bool = false
+
+    public init() {}
+
+    public func run(_ block: () -> Void) {
+        guard !already else {
+            return
+        }
+        block()
+        already = true
     }
 }

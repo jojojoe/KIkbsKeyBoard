@@ -26,23 +26,35 @@ class KEkeyNeTransformVC: UIViewController, UITextViewDelegate {
     let textInputView = UITextView()
     let resultTextView = DPTextView()
     let copyProImgV = UIImageView()
+    let favoriteProImgV = UIImageView()
     
     let contentViewTransView = KIkbsTextTypeTransformView()
     let contentViewCenterView = KIkbsTextCenterTransformView()
     let contentViewLeftRight = KIkbsTextLeftRightTransformView()
     
     var currentTransformItem: TextTranformItem? = KIkbsTextTransformManager.default.textTranformFontList.first
+    var currentZalgoItem: TextTranformItem? = nil
+    var currentLeftRightStrItem: TextTranformItem? = nil
     
-    var isCurrentPro = false
+    var isCurrentTransFontPro = false
+    var isCurrentTransZalgoPro = false
+    var isCurrentTransLeftRightPro = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addSubscribeNotic()
         contentViewSetup()
         setupContent()
         setupCollection()
     }
+    func addSubscribeNotic() {
+        //
+        NotificationCenter.default.addObserver(self, selector: #selector(updateSubscribeSuccessStatus(noti: )), name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success), object: nil)
+    }
     
+    @objc func updateSubscribeSuccessStatus(noti: Notification) {
+        updateCurrentProStatus()
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         pagingView.snp.makeConstraints {
@@ -168,7 +180,17 @@ extension KEkeyNeTransformVC {
             $0.height.equalTo(42)
         }
         favoriteBtn.addTarget(self, action: #selector(contentFavoriteBtnClick(sender: )), for: .touchUpInside)
-
+        
+        //
+        favoriteProImgV.image("ic_pro")
+        favoriteProImgV.adhere(toSuperview: view)
+        favoriteProImgV.snp.makeConstraints {
+            $0.top.equalTo(favoriteBtn.snp.top).offset(-8)
+            $0.right.equalTo(favoriteBtn.snp.right).offset(8)
+            $0.width.height.equalTo(17)
+        }
+        favoriteProImgV.isHidden = true
+        
         //
         bottomCanvasView
             .backgroundColor(UIColor.black)
@@ -207,41 +229,69 @@ extension KEkeyNeTransformVC {
 
 extension KEkeyNeTransformVC {
     func updateResultTextViewContent() {
-        if let item = currentTransformItem {
-            var originStr: String = textInputView.text
-            if textInputView.text == "" {
-                originStr = "Font"
-            }
-            let resultString = KIkbsTextTransformManager.default.processReplaceText(contentStr: originStr, transformItem: item)
-            resultTextView.text = resultString
+        
+        var currenTransItem = TextTranformItem()
+        
+        if let fontTransItem = currentTransformItem {
+            currenTransItem.previewStr = fontTransItem.previewStr
+            currenTransItem.contentStr_low = fontTransItem.contentStr_low
+            currenTransItem.contentStr_up = fontTransItem.contentStr_up
         }
+        if let zalgoTransItem = currentZalgoItem {
+            currenTransItem.zalgoList = zalgoTransItem.zalgoList
+        }
+        if let leftrightTransItem = currentLeftRightStrItem {
+            currenTransItem.leftAddStr = leftrightTransItem.leftAddStr
+            currenTransItem.rightAddStr = leftrightTransItem.rightAddStr
+        }
+        
+        var originStr: String = textInputView.text
+        if textInputView.text == "" {
+            originStr = "Font"
+        }
+        
+        let resultString = KIkbsTextTransformManager.default.processReplaceText(contentStr: originStr, transformItem: currenTransItem)
+        resultTextView.text = resultString
+        
     }
     
     func textViewDidChangeSelection(_ textView: UITextView) {
         updateResultTextViewContent()
     }
     
-    func updateCurrentProStatus(isCurrentPro: Bool) {
-        self.isCurrentPro = isCurrentPro
-        if isCurrentPro {
-            copyProImgV.isHidden = false
-        } else {
+    func updateCurrentProStatus() {
+        if KIkbsPurchaseManager.default.inSubscription {
             copyProImgV.isHidden = true
+            favoriteProImgV.isHidden = true
+        } else {
+            if isCurrentTransFontPro || isCurrentTransZalgoPro || isCurrentTransLeftRightPro {
+                copyProImgV.isHidden = false
+                favoriteProImgV.isHidden = false
+            } else {
+                copyProImgV.isHidden = true
+                favoriteProImgV.isHidden = true
+            }
         }
+
     }
 }
 
 extension KEkeyNeTransformVC {
     
     @objc func contentCopyBtnClick(sender: UIButton) {
-        let resultStr = resultTextView.text.replacingOccurrences(of: " ", with: "")
-        if resultStr.count == 0 {
-            ZKProgressHUD.showMessage("Please enter valid text.")
-            return
+        if copyProImgV.isHidden == true || KIkbsPurchaseManager.default.inSubscription {
+            //
+            let resultStr = resultTextView.text.replacingOccurrences(of: " ", with: "")
+            if resultStr.count == 0 {
+                ZKProgressHUD.showMessage("Please enter valid text.")
+                return
+            }
+            UIPasteboard.general.string = resultTextView.text
+            ZKProgressHUD.showSuccess("Copy successfully!")
+        } else {
+            self.present(KIkbsStoreVC(), animated: true)
         }
-
-        UIPasteboard.general.string = resultTextView.text
-        ZKProgressHUD.showSuccess("Copy successfully!")
+        
     }
     
     @objc func contentFavoriteBtnClick(sender: UIButton) {
@@ -252,7 +302,12 @@ extension KEkeyNeTransformVC {
             // 添加新的
             KIkbsKeboardFavoriteDB.default.addKeyFavoriteContent(favoriteKeyOnly: keyOnly, groupNameKeyOnly: groupOnlyKey, favoriteContentStr: newInputText) {
                 DispatchQueue.main.async {
-                    ZKProgressHUD.showSuccess("Already saved to favorites")
+                    ZKProgressHUD.showSuccess("Save to favorites successfully!")
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: noti_favoriteFetch),
+                        object: nil,
+                        userInfo: nil
+                    )
                 }
             }
         } else {
@@ -292,51 +347,66 @@ extension KEkeyNeTransformVC: JXPagingViewDelegate {
 
     func pagingView(_ pagingView: JXPagingView, initListAtIndex index: Int) -> JXPagingViewListViewDelegate {
         if index == 0 {
-            
             contentViewTransView.itemClickBlock = {
-                [weak self] item, ispro in
+                [weak self] fitem, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
-                    self.currentTransformItem = item
+                    self.isCurrentTransFontPro = ispro
+                    self.currentTransformItem = fitem
                     self.updateResultTextViewContent()
-                    self.updateCurrentProStatus(isCurrentPro: ispro)
-                    self.contentViewCenterView.currentIndexPath = nil
-                    self.contentViewCenterView.collection.reloadData()
-                    self.contentViewLeftRight.currentIndexPath = nil
-                    self.contentViewLeftRight.collection.reloadData()
+                    self.updateCurrentProStatus()
+//                    self.contentViewCenterView.currentIndexPath = nil
+//                    self.contentViewCenterView.collection.reloadData()
+//                    self.contentViewLeftRight.currentIndexPath = nil
+//                    self.contentViewLeftRight.collection.reloadData()
                 }
             }
             return contentViewTransView
         } else if index == 1 {
-
-            
             contentViewCenterView.itemClickBlock = {
-                [weak self] item, ispro in
+                [weak self] zitem, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
-                    self.currentTransformItem = item
+                    self.isCurrentTransZalgoPro = ispro
+                    if self.currentZalgoItem?.zalgoList.first == zitem.zalgoList.first && self.currentZalgoItem?.zalgoList.last == zitem.zalgoList.last {
+                        self.currentZalgoItem = nil
+                        self.contentViewCenterView.currentIndexPath = nil
+                        self.contentViewCenterView.collection.reloadData()
+                    } else {
+                        self.currentZalgoItem = zitem
+                    }
                     self.updateResultTextViewContent()
-                    self.updateCurrentProStatus(isCurrentPro: ispro)
-                    self.contentViewTransView.currentIndexPath = nil
-                    self.contentViewTransView.collection.reloadData()
-                    self.contentViewLeftRight.currentIndexPath = nil
-                    self.contentViewLeftRight.collection.reloadData()
+                    self.updateCurrentProStatus()
+                    
+//                    self.contentViewTransView.currentIndexPath = nil
+//                    self.contentViewTransView.collection.reloadData()
+//                    self.contentViewLeftRight.currentIndexPath = nil
+//                    self.contentViewLeftRight.collection.reloadData()
                 }
             }
             return contentViewCenterView
         } else if index == 2 {
-
             contentViewLeftRight.itemClickBlock = {
-                [weak self] item, ispro in
+                [weak self] ritem, ispro in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
-                    self.currentTransformItem = item
+                    self.isCurrentTransLeftRightPro = ispro
+                    if self.currentLeftRightStrItem?.leftAddStr == ritem.leftAddStr && self.currentLeftRightStrItem?.rightAddStr == ritem.rightAddStr {
+                        self.currentLeftRightStrItem = nil
+                        self.contentViewLeftRight.currentIndexPath = nil
+                        self.contentViewLeftRight.collection.reloadData()
+                    } else {
+                        self.currentLeftRightStrItem = ritem
+                        
+                    }
                     self.updateResultTextViewContent()
-                    self.updateCurrentProStatus(isCurrentPro: ispro)
-                    self.contentViewTransView.currentIndexPath = nil
-                    self.contentViewTransView.collection.reloadData()
-                    self.contentViewCenterView.currentIndexPath = nil
-                    self.contentViewCenterView.collection.reloadData()
+                    self.updateCurrentProStatus()
+                    
+                    
+//                    self.contentViewTransView.currentIndexPath = nil
+//                    self.contentViewTransView.collection.reloadData()
+//                    self.contentViewCenterView.currentIndexPath = nil
+//                    self.contentViewCenterView.collection.reloadData()
                 }
             }
             return contentViewLeftRight

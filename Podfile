@@ -19,6 +19,7 @@ target 'KIkbsKeyBoard' do
   pod 'SQLite.swift'
   pod 'ZWAlertController'
   pod "AttributedStringBuilder"
+  pod 'SCPageControl'
   
   #  Store
   pod 'SwiftyStoreKit'
@@ -28,9 +29,9 @@ target 'KIkbsKeyBoard' do
   pod 'LookinServer', :configurations => ['Debug']
 end
 
-target 'KIkkKeyBoard' do
+target 'KiKeyBoardCus' do
   use_frameworks!
-  pod 'ISEmojiView'
+  
   pod 'SnapKit'
   pod 'SQLite.swift'
   

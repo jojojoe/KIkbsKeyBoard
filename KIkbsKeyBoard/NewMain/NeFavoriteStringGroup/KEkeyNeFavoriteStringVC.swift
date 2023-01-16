@@ -33,7 +33,7 @@ class KEkeyNeFavoriteStringVC: UIViewController {
     var currentFavoritePageView: KIkbsKeyboardFavoritePageView?
     var currentSelectGroupPageIndex: Int = 0
     let topBar = UIView()
-    
+    var favoritePagesList: [String: KIkbsKeyboardFavoritePageView] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +42,25 @@ class KEkeyNeFavoriteStringVC: UIViewController {
         contentViewSetup()
         setupCollection()
         setupTextInputContentView()
+        addnoti()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         pagingView.snp.makeConstraints {
             $0.left.right.bottom.top.equalToSuperview()
+        }
+    }
+    
+    func addnoti() {
+//
+        NotificationCenter.default.addObserver(self, selector: #selector(notiUpdateFavoritePageList(notification: )), name: NSNotification.Name(rawValue: noti_favoriteFetch), object: nil)
+    }
+    
+    @objc func notiUpdateFavoritePageList(notification: Notification) {
+        guard let currentFavoritePageView_m = favoritePagesList["0"] else { return }
+        DispatchQueue.main.async {
+            currentFavoritePageView_m.loadData()
         }
     }
     
@@ -290,6 +303,12 @@ extension KEkeyNeFavoriteStringVC {
                 self.pagingView.reloadData()
                 self.segmentedView.reloadData()
                 self.dataSource.reloadData(selectedIndex: self.currentSelectGroupPageIndex)
+                
+                //
+                let favoriteDict: [[String: String]] = self.titleGroupList.compactMap({
+                    return ["groupName": $0.groupName, "keyOnly": $0.keyOnly]
+                })
+                KIkbsKeboardFavoriteDB.default.updateGroupFavoriteTitlesList(titles: favoriteDict)
             }
         }
         //
@@ -363,7 +382,7 @@ extension KEkeyNeFavoriteStringVC {
         guard let currentFavoritePageView_m = currentFavoritePageView else { return }
         
         if let currentEditingFavoriteItem_m = currentEditingFavoriteItem {
-            KIkbsKeboardFavoriteDB.default.deleteKeyFavoriteContent(favoriteKeyOnly: currentEditingFavoriteItem_m.keyOnly) {
+            KIkbsKeboardFavoriteDB.default.deleteKeyFavoriteContent(favoriteItem: currentEditingFavoriteItem_m) {
                 [weak self] in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
@@ -388,7 +407,6 @@ extension KEkeyNeFavoriteStringVC {
         guard let currentFavoritePageView_m = currentFavoritePageView else { return }
         
         let newInputText: String = textinputView.text
-       
         if newInputText == "" {
             HUD.message(string: "Sorry, The name entered is invalid, please re-enter it")
             return
@@ -396,7 +414,6 @@ extension KEkeyNeFavoriteStringVC {
         
         if let currentEditingFavoriteItem_m = currentEditingFavoriteItem {
             // 更新
-            
             KIkbsKeboardFavoriteDB.default.addKeyFavoriteContent(favoriteKeyOnly: currentEditingFavoriteItem_m.keyOnly, groupNameKeyOnly: currentEditingFavoriteItem_m.groupNameKeyOnly, favoriteContentStr: newInputText) {
                 DispatchQueue.main.async {
                     currentFavoritePageView_m.loadData()
@@ -527,26 +544,34 @@ extension KEkeyNeFavoriteStringVC: JXPagingViewDelegate {
 
     func pagingView(_ pagingView: JXPagingView, initListAtIndex index: Int) -> JXPagingViewListViewDelegate {
         
-        let group = titleGroupList[index]
         
-        let contentView = KIkbsKeyboardFavoritePageView(frame: .zero, favoriteGroupKeyOnly: group.keyOnly)
-        contentView.selectFavoriteItemBlock = {
-            [weak self] keyboardFavoriteItem in
-            guard let `self` = self else {return}
-            DispatchQueue.main.async {
-                self.textinputView.text = keyboardFavoriteItem.contentStr
-                self.showTextFavoriteContentInputView(oldContent: keyboardFavoriteItem, favoritePageView: contentView)
+        if let page = favoritePagesList["\(index)"] {
+            return page
+        } else {
+            let group = titleGroupList[index]
+            let contentView = KIkbsKeyboardFavoritePageView(frame: .zero, favoriteGroupKeyOnly: group.keyOnly)
+            contentView.selectFavoriteItemBlock = {
+                [weak self] keyboardFavoriteItem in
+                guard let `self` = self else {return}
+                DispatchQueue.main.async {
+                    self.textinputView.text = keyboardFavoriteItem.contentStr
+                    self.showTextFavoriteContentInputView(oldContent: keyboardFavoriteItem, favoritePageView: contentView)
+                }
             }
-        }
-        contentView.addNewKeyboardFavoriteContentBlock = {
-            [weak self] groupKeyOnly in
-            guard let `self` = self else {return}
-            DispatchQueue.main.async {
-                self.textinputView.text = ""
-                self.showTextFavoriteContentInputView(oldContent: nil, favoritePageView: contentView)
+            contentView.addNewKeyboardFavoriteContentBlock = {
+                [weak self] groupKeyOnly in
+                guard let `self` = self else {return}
+                DispatchQueue.main.async {
+                    self.textinputView.text = ""
+                    self.showTextFavoriteContentInputView(oldContent: nil, favoritePageView: contentView)
+                }
             }
+            favoritePagesList["\(index)"] = contentView
+            return contentView
         }
-        return contentView
+        
+        
+        
     }
     
     func pagingView(_ pagingView: JXPagingView, mainTableViewDidScroll scrollView: UIScrollView) {

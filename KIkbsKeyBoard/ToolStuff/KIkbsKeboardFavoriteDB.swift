@@ -9,7 +9,7 @@ import UIKit
 import SQLite
 
 
-var AppGroup = "group.com.keyinsfont.superone"
+var AppGroup = "group.com.xx.888888"
 
 struct KeyboardFavoriteItem {
     var keyOnly: String // 唯一标识符
@@ -114,6 +114,7 @@ extension KIkbsKeboardFavoriteDB {
             debugPrint("dberror: delete table failed :\(db_keyOnly)")
         }
         completionBlock?()
+        
     }
     
     func selectKeyFavoriteGroupNameList(completionBlock: (([KeyboardFavoriteGroup])->Void)?) {
@@ -146,18 +147,20 @@ extension KIkbsKeboardFavoriteDB {
             debugPrint("error = \(error)")
         }
         completionBlock?()
+        updateGroupFavoriteContentList(isAdd: true,groupKey: groupNameKeyOnly, favoValue: favoriteContentStr)
     }
     
-    func deleteKeyFavoriteContent(favoriteKeyOnly: String, completionBlock: (()->Void)?) {
+    func deleteKeyFavoriteContent(favoriteItem: KeyboardFavoriteItem, completionBlock: (()->Void)?) {
         let table = Table("KeyFavoriteList")
         let db_keyOnly = Expression<String>("keyOnly")
-        let deleteItem = table.filter(db_keyOnly == favoriteKeyOnly)
+        let deleteItem = table.filter(db_keyOnly == favoriteItem.keyOnly)
         do {
             try db?.run(deleteItem.delete())
         } catch {
             debugPrint("dberror: delete table failed :\(db_keyOnly)")
         }
         completionBlock?()
+        updateGroupFavoriteContentList(isAdd: false, groupKey: favoriteItem.groupNameKeyOnly, favoValue: favoriteItem.contentStr)
     }
     
     func selectFavoriteContentList(groupNameKeyOnly: String, completionBlock: (([KeyboardFavoriteItem])->Void)?) {
@@ -180,7 +183,58 @@ extension KIkbsKeboardFavoriteDB {
             debugPrint("dberror: load favorites failed")
         }
     }
+}
+
+extension KIkbsKeboardFavoriteDB {
+    func updateGroupFavoriteTitlesList(titles: [[String: String]]) {
+        if let defaults = UserDefaults.init(suiteName: AppGroup) {
+            defaults.set(titles, forKey: "k_f_titles")
+        }
+        
+    }
+
+    func keyboardFetchFavroriteTitles() -> [[String: String]] {
+        if let defaults = UserDefaults.init(suiteName: AppGroup) {
+            if let titles = defaults.object(forKey: "k_f_titles") as? [[String: String]] {
+               return titles
+            }
+        }
+        
+        
+        return []
+    }
     
+    func updateGroupFavoriteContentList(isAdd: Bool, groupKey: String, favoValue: String) {
+        var favoriteList = keyboardFetchFavroriteContents()
+        if isAdd {
+            if favoriteList.count == 0 {
+                favoriteList.append(["groupKey": groupKey, "favoValue" : favoValue])
+            } else {
+                favoriteList.insert(["groupKey": groupKey, "favoValue" : favoValue], at: 0)
+            }
+        } else {
+            favoriteList.removeAll { dict in
+                if dict.keys.first == groupKey && dict.values.first == favoValue {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+        if let defaults = UserDefaults.init(suiteName: AppGroup) {
+            defaults.set(favoriteList, forKey: "k_f_favorite")
+        }
+        
+    }
     
+    func keyboardFetchFavroriteContents() -> [[String: String]] {
+        if let defaults = UserDefaults.init(suiteName: AppGroup) {
+            if let favorites = defaults.object(forKey: "k_f_favorite") as? [[String: String]] {
+               return favorites
+            }
+        }
+        
+        return []
+    }
     
 }

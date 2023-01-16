@@ -18,7 +18,7 @@ class KEkeyNeTextCardVC: UIViewController {
     lazy var pagingView: JXPagingView = JXPagingView(delegate: self)
     lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: CGFloat(headerInSectionHeight)))
     var dataSource = JXSegmentedTitleDataSource()
-    var titles = ["Background", "  Text  ", "Watermark"]
+    var titles = ["  Text  ", "Background", "Watermark"]
     
     // 颜色主题、对齐方式、随机文案、图片尺寸比例、保存按钮
     let bottomCanvasView = UIView()
@@ -29,7 +29,7 @@ class KEkeyNeTextCardVC: UIViewController {
     let cardInputBar = KIkbsCardTextInputBar()
     let cardThemeBar = KIkbsCardThemeColorBar()
     let cardWatermarkBar = KIkbsCardWatermarkBar()
-    let cardTextInputView = KIkbsCardTextInputView()
+//    let cardTextInputView = KIkbsCardTextInputView()
     
     var canvasSizeType: TextCardCanvasSize = .size1_1
     
@@ -50,7 +50,8 @@ class KEkeyNeTextCardVC: UIViewController {
         super.viewDidLoad()
         contentViewSetup()
         setupCollection()
-        setupCardTextInputView()
+//        setupCardTextInputView()
+        setupTextInputContentView()
         setupDefaultStatus()
         
     }
@@ -101,7 +102,7 @@ class KEkeyNeTextCardVC: UIViewController {
         downloadBtn.snp.makeConstraints {
             $0.centerY.equalTo(titNameLabel.snp.centerY)
             $0.right.equalTo(-12)
-            $0.width.height.equalTo(44)
+            $0.width.height.equalTo(40)
         }
         downloadBtn.addTarget(self, action: #selector(downloadBtnClick(sender:)), for: .touchUpInside)
         //
@@ -180,13 +181,13 @@ class KEkeyNeTextCardVC: UIViewController {
         pagingView.listContainerView.listCellBackgroundColor = .clear
     }
 
-    func setupCardTextInputView() {
-        cardTextInputView.alpha = 0
-        view.addSubview(cardTextInputView)
-        cardTextInputView.snp.makeConstraints {
-            $0.left.right.bottom.top.equalToSuperview()
-        }
-    }
+//    func setupCardTextInputView() {
+//        cardTextInputView.alpha = 0
+//        view.addSubview(cardTextInputView)
+//        cardTextInputView.snp.makeConstraints {
+//            $0.left.right.bottom.top.equalToSuperview()
+//        }
+//    }
     
     func setupDefaultStatus() {
         
@@ -303,43 +304,50 @@ extension KEkeyNeTextCardVC {
 
 extension KEkeyNeTextCardVC {
     func showcardInputBar() {
+        
+        textinputBgView.isHidden = false
+        
+        self.textinputView.text = cardCanvasView.currentString
+        textinputView.becomeFirstResponder()
+        
+        
         // show coin alert
-        UIView.animate(withDuration: 0.35) {
-            self.cardTextInputView.alpha = 1
-        }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.35) {
-            self.cardTextInputView.textInputTextView.becomeFirstResponder()
-        }
-        cardTextInputView.okBtnClickBlock = {
-            [weak self] text in
-            guard let `self` = self else {return}
-            DispatchQueue.main.async {
-                
-                self.cardCanvasView.updateCanvasTextStr(text: text)
-                self.cardInputBar.udpateTextContent(contentStr: text)
-            }
-
-            UIView.animate(withDuration: 0.25) {
-                self.cardTextInputView.alpha = 0
-            } completion: { finished in
-                if finished {
-                    
-                }
-            }
-        }
-        
-        
-        cardTextInputView.backBtnClickBlock = {
-            [weak self] in
-            guard let `self` = self else {return}
-            UIView.animate(withDuration: 0.25) {
-                self.cardTextInputView.alpha = 0
-            } completion: { finished in
-                if finished {
-                    
-                }
-            }
-        }
+//        UIView.animate(withDuration: 0.35) {
+//            self.cardTextInputView.alpha = 1
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.35) {
+//            self.cardTextInputView.textInputTextView.becomeFirstResponder()
+//        }
+//        cardTextInputView.okBtnClickBlock = {
+//            [weak self] text in
+//            guard let `self` = self else {return}
+//            DispatchQueue.main.async {
+//
+//                self.cardCanvasView.updateCanvasTextStr(text: text)
+//                self.cardInputBar.udpateTextContent(contentStr: text)
+//            }
+//
+//            UIView.animate(withDuration: 0.25) {
+//                self.cardTextInputView.alpha = 0
+//            } completion: { finished in
+//                if finished {
+//
+//                }
+//            }
+//        }
+//
+//
+//        cardTextInputView.backBtnClickBlock = {
+//            [weak self] in
+//            guard let `self` = self else {return}
+//            UIView.animate(withDuration: 0.25) {
+//                self.cardTextInputView.alpha = 0
+//            } completion: { finished in
+//                if finished {
+//
+//                }
+//            }
+//        }
     }
 }
 
@@ -365,46 +373,46 @@ extension KEkeyNeTextCardVC {
     }
     
     func closeKeyboradAction(text: String?) {
-        self.watermarkTextFeild.endEditing(true)
+        self.textinputView.endEditing(true)
 //        self.watermarkTextFeild.resignFirstResponder()
         self.cardWatermarkBar.updateEnterTextStr(textStr: text)
     }
     
     @objc func watermarkTextFeildHiddenBtnClick(sender: UIButton) {
-        self.closeKeyboradAction(text: self.watermarkTextFeild.text)
+        self.closeKeyboradAction(text: self.textinputView.text)
     }
     
-    func resetupTextFeild() {
-        //
-//        watermarkTextFeildToolView = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.width, height: 44))
-//        watermarkTextFeildToolView.backgroundColor = .white
-//        view.addSubview(watermarkTextFeildToolView)
+//    func resetupTextFeild() {
 //        //
-//        hideButton
-//            .addTarget(self, action: #selector(watermarkTextFeildHiddenBtnClick(sender:)), for: .touchUpInside)
-//        hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
-////        hideButton.setTitle("Okey", for: .normal)
-//        hideButton.setTitleColor(UIColor.init(hexString: "#000000"), for: .normal)
-//
-//        watermarkTextFeildToolView.addSubview(hideButton)
-//        hideButton.snp.makeConstraints {
-//            $0.height.equalTo(40)
-//            $0.width.greaterThanOrEqualTo(1)
-//            $0.right.equalTo(-20)
-//            $0.centerY.equalToSuperview()
-//        }
-//
-//        //
-//        watermarkTextFeildToolView.addSubview(watermarkTextFeild)
-//        watermarkTextFeild.snp.makeConstraints {
-//            $0.centerY.equalToSuperview()
-//            $0.left.equalTo(30)
-//            $0.height.equalTo(38)
-//            $0.right.equalTo(-80)
-//        }
-//        watermarkTextFeild.inputAccessoryView =  watermarkTextFeildToolView
-//        watermarkTextFeild.delegate = self
-    }
+////        watermarkTextFeildToolView = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.width, height: 44))
+////        watermarkTextFeildToolView.backgroundColor = .white
+////        view.addSubview(watermarkTextFeildToolView)
+////        //
+////        hideButton
+////            .addTarget(self, action: #selector(watermarkTextFeildHiddenBtnClick(sender:)), for: .touchUpInside)
+////        hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
+//////        hideButton.setTitle("Okey", for: .normal)
+////        hideButton.setTitleColor(UIColor.init(hexString: "#000000"), for: .normal)
+////
+////        watermarkTextFeildToolView.addSubview(hideButton)
+////        hideButton.snp.makeConstraints {
+////            $0.height.equalTo(40)
+////            $0.width.greaterThanOrEqualTo(1)
+////            $0.right.equalTo(-20)
+////            $0.centerY.equalToSuperview()
+////        }
+////
+////        //
+////        watermarkTextFeildToolView.addSubview(watermarkTextFeild)
+////        watermarkTextFeild.snp.makeConstraints {
+////            $0.centerY.equalToSuperview()
+////            $0.left.equalTo(30)
+////            $0.height.equalTo(38)
+////            $0.right.equalTo(-80)
+////        }
+////        watermarkTextFeild.inputAccessoryView =  watermarkTextFeildToolView
+////        watermarkTextFeild.delegate = self
+//    }
     
     func setupTextInputContentView() {
         
@@ -462,9 +470,11 @@ extension KEkeyNeTextCardVC {
         textinputContentCloseBtn.addTarget(self, action: #selector(textinputBgCloseBtnClick(sender:)), for: .touchUpInside)
         
         // tool view
+        watermarkTextFeildToolView = UIView(frame: CGRect(x: 0, y: -100, width: UIScreen.width, height: 44))
+        watermarkTextFeildToolView.backgroundColor = .white
         view.addSubview(watermarkTextFeildToolView)
         watermarkTextFeildToolView.backgroundColor = UIColor(hexString: "#FFFFFF")
-        watermarkTextFeildToolView.frame = CGRect(x: 0, y: -100, width: UIScreen.main.bounds.width, height: 40)
+        
         
         // tool keyborder hiden view
         hideButton.setImage(UIImage(named: "ic_keyboard_close"), for: .normal)
@@ -511,21 +521,34 @@ extension KEkeyNeTextCardVC {
         textinputSaveFavoBtn.layer.shadowOffset = CGSize(width: -2, height: 2)
         textinputSaveFavoBtn.layer.shadowOpacity = 1
         textinputSaveFavoBtn.snp.makeConstraints {
-            $0.centerY.equalTo(textinputDeleteFavoBtn.snp.centerY)
+            $0.bottom.equalToSuperview().offset(-16)
             $0.right.equalToSuperview().offset(-16)
+            $0.left.equalToSuperview().offset(16)
             $0.height.equalTo(44)
-            $0.left.equalTo(textinputDeleteFavoBtn.snp.right).offset(16)
         }
         textinputSaveFavoBtn.addTarget(self, action: #selector(textinputSaveFavoBtnClick(sender:)), for: .touchUpInside)
          
     }
     
+    
 }
 
 extension KEkeyNeTextCardVC {
     @objc func textinputBgCloseBtnClick(sender: UIButton) {
-        textinputBgView.isHidden = true
+        
         hideButtonClick(sender: hideButton)
+    }
+    
+    @objc func hideButtonClick(sender: UIButton) {
+        textinputBgView.isHidden = true
+        self.textinputView.resignFirstResponder()
+    }
+    
+    @objc func textinputSaveFavoBtnClick(sender: UIButton) {
+        
+        hideButtonClick(sender: hideButton)
+        self.cardCanvasView.updateCanvasTextStr(text: textinputView.text)
+        self.cardInputBar.udpateTextContent(contentStr: textinputView.text)
     }
 }
 
@@ -610,15 +633,20 @@ extension KEkeyNeTextCardVC: JXPagingViewDelegate {
                 [weak self] in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
-                    self.resetupTextFeild()
-                    self.watermarkTextFeild.becomeFirstResponder()
+                    self.textinputBgView.isHidden = false
+                    self.textinputView.text = self.waterOverlayer.currentWaterText
+                    self.textinputView.becomeFirstResponder()
                 }
             }
             cardWatermarkBar.selectWaterMarkClickBlock = {
-                [weak self] index, item in
+                [weak self] index, item, ispromark in
                 guard let `self` = self else {return}
                 DispatchQueue.main.async {
-                    self.updateWatermakrContentType(typeIndex: index)
+                    if !ispromark || KIkbsPurchaseManager.default.inSubscription {
+                        self.updateWatermakrContentType(typeIndex: index)
+                    } else {
+                        self.present(KIkbsStoreVC(), animated: true, completion: nil)
+                    }
                 }
             }
             return cardWatermarkBar
@@ -636,41 +664,47 @@ extension KEkeyNeTextCardVC: JXSegmentedViewDelegate {
     }
 }
 
-extension KEkeyNeTextCardVC: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        debugPrint("textFieldDidEndEditing")
-    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        updateWatermark(textStr: textField.text)
-        
-        debugPrint("did Changeing")
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-//        updateWatermark(textStr: textField.text)
-        
-        if string == "" {
-            
-        } else {
-//            TaskDelay.default.taskDelay(afterTime: 0.8) {[weak self] in
-//                guard let `self` = self else {return}
-//            }
-        }
-        debugPrint("shouldChangeCharactersIn")
+extension KEkeyNeTextCardVC: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         return true
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        closeKeyboradAction(text: textField.text)
-         
-        
-        return true
-    }
-    
-    
 }
+
+//extension KEkeyNeTextCardVC: UITextFieldDelegate {
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        debugPrint("textFieldDidEndEditing")
+//    }
+//
+//    func textFieldDidChangeSelection(_ textField: UITextField) {
+//        updateWatermark(textStr: textField.text)
+//
+//        debugPrint("did Changeing")
+//    }
+//
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+////        updateWatermark(textStr: textField.text)
+//
+//        if string == "" {
+//
+//        } else {
+////            TaskDelay.default.taskDelay(afterTime: 0.8) {[weak self] in
+////                guard let `self` = self else {return}
+////            }
+//        }
+//        debugPrint("shouldChangeCharactersIn")
+//        return true
+//    }
+//
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        closeKeyboradAction(text: textField.text)
+//
+//
+//        return true
+//    }
+//
+//
+//}
 
 
 

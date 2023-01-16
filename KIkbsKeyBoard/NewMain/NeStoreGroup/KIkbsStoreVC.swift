@@ -348,13 +348,14 @@ class KIkbsStoreVC: UIViewController {
 extension KIkbsStoreVC {
     
     func purchaseOrderIAP(iapType: IAPType) {
+        
         KIkbsPurchaseManager.default.order(iapType: iapType, source: "unknown", page: "", isInTest: false, success: {
             [weak self] in
             guard let `self` = self else {return}
-            
+
             let status = KIkbsPurchaseManager.default.inSubscription
             debugPrint("purchase status : \(status)")
-            
+
             if self.navigationController != nil {
                 self.navigationController?.popViewController()
             } else {
@@ -404,7 +405,10 @@ extension KIkbsStoreVC {
     }
     
     @objc func subscriNoticeBtnAction(sender: UIButton) {
-        
+        let vc = KEkeyNeInfoPagePreviewVC()
+        vc.toplabel.text = "Subscribe Notice"
+        vc.contentTextV.text = subscribeInfoStr
+        self.present(vc, animated: true)
     }
     
 

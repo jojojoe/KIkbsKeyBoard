@@ -80,6 +80,10 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.left.top.equalToSuperview().offset(4)
                 $0.right.bottom.equalToSuperview().offset(-4)
             }
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
             
         } else if currentWaterType == 2 {
             let label = UILabel()
@@ -95,7 +99,10 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.right.bottom.equalToSuperview().offset(-4)
             }
             label.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/4)
-            
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
         } else if currentWaterType == 3 {
             //
             let bgColorView = UIView()
@@ -115,7 +122,10 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.width.lessThanOrEqualTo(cell.contentView.bounds.width - 20)
                 $0.height.lessThanOrEqualTo(cell.contentView.bounds.height - 20)
             }
-            
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
             
             //
             bgColorView.snp.makeConstraints {
@@ -145,7 +155,10 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.height.lessThanOrEqualTo(cell.contentView.bounds.height - 20)
             }
             label.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/4)
-            
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
             //
             bgColorView.snp.makeConstraints {
                 $0.left.top.equalTo(label).offset(-6)
@@ -175,6 +188,11 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
             label.snp.makeConstraints {
                 $0.left.top.right.bottom.equalToSuperview()
             }
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
+            
             bgColorView.snp.makeConstraints {
                 $0.left.top.equalTo(label).offset(-6)
                 $0.bottom.right.equalTo(label).offset(6)
@@ -205,6 +223,11 @@ extension KIkbsCardWatermarkOverlayer: UICollectionViewDataSource {
                 $0.bottom.lessThanOrEqualTo(bgView.snp.bottom).offset(-5)
                 $0.centerY.equalToSuperview()
             }
+            label.layer.shadowColor = UIColor.black.cgColor
+            label.layer.shadowOffset = CGSize(width: 0, height: 0)
+            label.layer.shadowRadius = 1
+            label.layer.shadowOpacity = 1
+            
             bgColorView.snp.makeConstraints {
                 $0.left.top.equalTo(label).offset(-6)
                 $0.bottom.right.equalTo(label).offset(6)

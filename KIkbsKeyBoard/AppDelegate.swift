@@ -31,24 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
     }
     
-    func setupIAP() {
-        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
-            for purchase in purchases {
-                switch purchase.transaction.transactionState {
-                case .purchased, .restored:
-                    if purchase.needsFinishTransaction {
-                        // Deliver content from server, then:
-                        SwiftyStoreKit.finishTransaction(purchase.transaction)
-                    }
-                // Unlock content
-                case .failed, .purchasing, .deferred:
-                    break // do nothing
-                @unknown default:
-                    break
-                }
-            }
-        }
-    }
+    
     
     func trackeringAuthor() {
        
@@ -59,9 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         }
     }
-    
-   
-    
+     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // init db
         KIkbsKeboardFavoriteDB.default.prepareDB()
@@ -73,8 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupIAP()
         initMainVC()
         trackeringAuthor()
-        
-        
         
         return true
     }
@@ -92,3 +71,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func setupIAP() {
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            for purchase in purchases {
+                switch purchase.transaction.transactionState {
+                case .purchased, .restored:
+                    if purchase.needsFinishTransaction {
+                        // Deliver content from server, then:
+                        SwiftyStoreKit.finishTransaction(purchase.transaction)
+                    }
+                // Unlock content
+                case .failed, .purchasing, .deferred:
+                    break // do nothing
+                @unknown default:
+                    break
+                }
+            }    
+        }
+        
+        checkSubscription()
+                
+        SwiftyStoreKit.shouldAddStorePaymentHandler = { (payment, product) -> Bool in
+            // TODO: Store page
+            return false
+        }
+    }
+    
+    func checkSubscription() {
+        
+        if KIkbsPurchaseManager.default.isLocalVerify {
+            KIkbsPurchaseManager.default.refreshReceipt { (_, _) in
+                KIkbsPurchaseManager.default.isPurchased { (status) in
+                    debugPrint("current is in purchased \(status)")
+                    KIkbsPurchaseManager.default.inSubscription = status
+                    if !status {
+                        KIkbsPurchaseManager.default.purchaseInfo { (products) in
+                            debugPrint(products)
+                        }
+                    }
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success),
+                        object: nil,
+                        userInfo: nil
+                    )
+                }
+            }
+        } else {
+            let status = KIkbsPurchaseManager.default.inSubscription
+            if !status {
+                KIkbsPurchaseManager.default.purchaseInfo { (products) in
+                    debugPrint(products)
+                }
+            }
+        }
+    }
+    
+}

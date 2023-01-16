@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C50FEC780FA3DBA714FEBDF6 /* Pods_KIkkKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */; };
 		CD16FE86E616849F44F724AF /* Pods_KIkbsKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */; };
-		EB4634FA27146719005877C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC4268EC32D00DA318F /* Assets.xcassets */; };
+		EB2D5FA9296EBCB500C9DFA3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5FA8296EBCB500C9DFA3 /* KeyboardViewController.swift */; };
+		EB2D5FAD296EBCB500C9DFA3 /* KiKeyBoardCus.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB2D5FA6296EBCB500C9DFA3 /* KiKeyBoardCus.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB2D5FB2296EBD0600C9DFA3 /* KeyBoardTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5FB1296EBD0600C9DFA3 /* KeyBoardTopBar.swift */; };
+		EB2D5FB4296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5FB3296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift */; };
+		EB2D5FB6296EC76A00C9DFA3 /* KeyBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5FB5296EC76A00C9DFA3 /* KeyBoardManager.swift */; };
+		EB2D5FB7296EC7C000C9DFA3 /* KIkbsKeboardFavoriteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */; };
+		EB351D332972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB351D322972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift */; };
 		EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */; };
 		EB4E385B26CB9F2D00D1FE4D /* ConfigTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */; };
 		EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */; };
@@ -23,13 +28,6 @@
 		EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */; };
 		EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */; };
 		EB7A2B8226C4FF3900F25D38 /* ExtensionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */; };
-		EB7A2B9626C502B900F25D38 /* KeyBTag.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9226C502B900F25D38 /* KeyBTag.json */; };
-		EB7A2B9726C502B900F25D38 /* KeyBStuffDataMana.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */; };
-		EB7A2B9926C502B900F25D38 /* KeyBFuHao.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */; };
-		EB7A2B9F26C502E300F25D38 /* KeyBstyleList.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */; };
-		EB7A2BA026C502E300F25D38 /* KBKeyBtnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */; };
-		EB7A2BA126C502E300F25D38 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */; };
-		EB7A2BA226C502E300F25D38 /* KeyBKeyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */; };
 		EB88FDE226D37FD7005BD007 /* LLMorseCodeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */; };
 		EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */; };
 		EB88FE4526D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */; };
@@ -39,11 +37,6 @@
 		EB9407CE26F3819400CB4A66 /* textTransform_Font.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CD26F3819400CB4A66 /* textTransform_Font.json */; };
 		EB9407D026F381C300CB4A66 /* textTransform_LeftAdd.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */; };
 		EB9407D226F381DF00CB4A66 /* textTransform_Zalgo.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */; };
-		EB95E6F927EC136A002405EF /* KIkTopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E6F827EC136A002405EF /* KIkTopMenuBar.swift */; };
-		EB95E6FB27EC1488002405EF /* KIkFontSelectV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E6FA27EC1488002405EF /* KIkFontSelectV.swift */; };
-		EB95E6FD27EC155C002405EF /* KIkFavoriteSelectV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E6FC27EC155C002405EF /* KIkFavoriteSelectV.swift */; };
-		EB95E70027EC19BE002405EF /* KIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E6FF27EC19BE002405EF /* KIDataManager.swift */; };
-		EB95E70127EC21D4002405EF /* KIkbsKeboardFavoriteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */; };
 		EB960C4A26DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */; };
 		EB960C4C26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */; };
 		EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */; };
@@ -73,17 +66,16 @@
 		EBF8BCC3268EC32700DA318F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC1268EC32700DA318F /* Main.storyboard */; };
 		EBF8BCC5268EC32D00DA318F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC4268EC32D00DA318F /* Assets.xcassets */; };
 		EBF8BCC8268EC32D00DA318F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8BCC6268EC32D00DA318F /* LaunchScreen.storyboard */; };
-		EBF8BCD6268ECD2400DA318F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */; };
-		EBF8BCDA268ECD2400DA318F /* KIkkKeyBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6B39F151DB748C026416948 /* Pods_KiKeyBoardCus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80C7322360F884DDAE9B277 /* Pods_KiKeyBoardCus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EBF8BCD8268ECD2400DA318F /* PBXContainerItemProxy */ = {
+		EB2D5FAB296EBCB500C9DFA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBF8BCB0268EC32700DA318F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EBF8BCD2268ECD2400DA318F;
-			remoteInfo = KIkkKeyBoard;
+			remoteGlobalIDString = EB2D5FA5296EBCB500C9DFA3;
+			remoteInfo = KiKeyBoardCus;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				EBF8BCDA268ECD2400DA318F /* KIkkKeyBoard.appex in Embed App Extensions */,
+				EB2D5FAD296EBCB500C9DFA3 /* KiKeyBoardCus.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,11 +95,22 @@
 
 /* Begin PBXFileReference section */
 		1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkkKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-KIkkKeyBoard/Pods-KIkkKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		2B6B05ABD2B364CCC31DD5D3 /* Pods-KiKeyBoardCus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiKeyBoardCus.release.xcconfig"; path = "Target Support Files/Pods-KiKeyBoardCus/Pods-KiKeyBoardCus.release.xcconfig"; sourceTree = "<group>"; };
 		302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkkKeyBoard.debug.xcconfig"; path = "Target Support Files/Pods-KIkkKeyBoard/Pods-KIkkKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		37AE30F60F795351D6DC0D42 /* Pods-KiKeyBoardCus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiKeyBoardCus.debug.xcconfig"; path = "Target Support Files/Pods-KiKeyBoardCus/Pods-KiKeyBoardCus.debug.xcconfig"; sourceTree = "<group>"; };
 		53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIkkKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F369BAF95FF4BD37AED85C /* Pods-KIkbsKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkbsKeyBoard.debug.xcconfig"; path = "Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		C8370BC81A35FDD9377060E3 /* Pods-KIkbsKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIkbsKeyBoard.release.xcconfig"; path = "Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
 		CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIkbsKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2D5FA6296EBCB500C9DFA3 /* KiKeyBoardCus.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KiKeyBoardCus.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2D5FA8296EBCB500C9DFA3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		EB2D5FAA296EBCB500C9DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2D5FB1296EBD0600C9DFA3 /* KeyBoardTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardTopBar.swift; sourceTree = "<group>"; };
+		EB2D5FB3296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardContentPreview.swift; sourceTree = "<group>"; };
+		EB2D5FB5296EC76A00C9DFA3 /* KeyBoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardManager.swift; sourceTree = "<group>"; };
+		EB351D2D296FAC3E0034D4F2 /* KiKeyBoardCus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KiKeyBoardCus.entitlements; sourceTree = "<group>"; };
+		EB351D2E2970EC310034D4F2 /* configstore.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = configstore.storekit; sourceTree = "<group>"; };
+		EB351D322972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyboardSetGuideVC.swift; sourceTree = "<group>"; };
 		EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalgoStringMaker.swift; sourceTree = "<group>"; };
 		EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTool.swift; sourceTree = "<group>"; };
 		EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainToolBarBtn.swift; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeSpecialTextVC.swift; sourceTree = "<group>"; };
 		EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeFavoriteStringVC.swift; sourceTree = "<group>"; };
 		EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeTextCardVC.swift; sourceTree = "<group>"; };
-		EB71229C27F15F22000F04D6 /* KIkkKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkkKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainVC.swift; sourceTree = "<group>"; };
 		EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkbsKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB7A2B7926C4D81000F25D38 /* TEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEST.h; sourceTree = "<group>"; };
@@ -124,13 +126,6 @@
 		EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSettingVC.swift; sourceTree = "<group>"; };
 		EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsStoreVC.swift; sourceTree = "<group>"; };
 		EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTool.swift; sourceTree = "<group>"; };
-		EB7A2B9226C502B900F25D38 /* KeyBTag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBTag.json; sourceTree = "<group>"; };
-		EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBStuffDataMana.swift; sourceTree = "<group>"; };
-		EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBFuHao.json; sourceTree = "<group>"; };
-		EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KeyBstyleList.json; sourceTree = "<group>"; };
-		EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBKeyBtnManager.swift; sourceTree = "<group>"; };
-		EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
-		EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBKeyBtn.swift; sourceTree = "<group>"; };
 		EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMorseCodeTranslator.swift; sourceTree = "<group>"; };
 		EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMorseCodeTransformView.swift; sourceTree = "<group>"; };
 		EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextLeftRightTransformView.swift; sourceTree = "<group>"; };
@@ -140,10 +135,6 @@
 		EB9407CD26F3819400CB4A66 /* textTransform_Font.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_Font.json; sourceTree = "<group>"; };
 		EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_LeftAdd.json; sourceTree = "<group>"; };
 		EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_Zalgo.json; sourceTree = "<group>"; };
-		EB95E6F827EC136A002405EF /* KIkTopMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkTopMenuBar.swift; sourceTree = "<group>"; };
-		EB95E6FA27EC1488002405EF /* KIkFontSelectV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkFontSelectV.swift; sourceTree = "<group>"; };
-		EB95E6FC27EC155C002405EF /* KIkFavoriteSelectV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkFavoriteSelectV.swift; sourceTree = "<group>"; };
-		EB95E6FF27EC19BE002405EF /* KIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIDataManager.swift; sourceTree = "<group>"; };
 		EB960C4926DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardWatermarkOverlayer.swift; sourceTree = "<group>"; };
 		EB960C4B26DF72D000EDB86A /* KIkbsCardWatermarkBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardWatermarkBar.swift; sourceTree = "<group>"; };
 		EB960C4D26DF791E00EDB86A /* KIkbsCardTextInputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardTextInputBar.swift; sourceTree = "<group>"; };
@@ -153,7 +144,6 @@
 		EB99D90326D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialStrPreviewView.swift; sourceTree = "<group>"; };
 		EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeboardFavoriteDB.swift; sourceTree = "<group>"; };
 		EBA00AAD27ED5EB600AB3CC2 /* KIkbsKeyBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KIkbsKeyBoard.entitlements; sourceTree = "<group>"; };
-		EBA00AAE27ED5ECD00AB3CC2 /* KIkkKeyBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KIkkKeyBoard.entitlements; sourceTree = "<group>"; };
 		EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardCanvasTextView.swift; sourceTree = "<group>"; };
 		EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardTextInputView.swift; sourceTree = "<group>"; };
 		EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialTextLibVC.swift; sourceTree = "<group>"; };
@@ -177,25 +167,23 @@
 		EBF8BCC4268EC32D00DA318F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBF8BCC7268EC32D00DA318F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF8BCC9268EC32D00DA318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KIkkKeyBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		EBF8BCD7268ECD2400DA318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80C7322360F884DDAE9B277 /* Pods_KiKeyBoardCus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiKeyBoardCus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EB2D5FA3296EBCB500C9DFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B39F151DB748C026416948 /* Pods_KiKeyBoardCus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8BCB5268EC32700DA318F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD16FE86E616849F44F724AF /* Pods_KIkbsKeyBoard.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBF8BCD0268ECD2400DA318F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C50FEC780FA3DBA714FEBDF6 /* Pods_KIkkKeyBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +197,8 @@
 				C8370BC81A35FDD9377060E3 /* Pods-KIkbsKeyBoard.release.xcconfig */,
 				302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */,
 				1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */,
+				37AE30F60F795351D6DC0D42 /* Pods-KiKeyBoardCus.debug.xcconfig */,
+				2B6B05ABD2B364CCC31DD5D3 /* Pods-KiKeyBoardCus.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -218,8 +208,22 @@
 			children = (
 				CA5BB0FF857D281CDE485764 /* Pods_KIkbsKeyBoard.framework */,
 				53C75ED88B0CED2188AA5476 /* Pods_KIkkKeyBoard.framework */,
+				F80C7322360F884DDAE9B277 /* Pods_KiKeyBoardCus.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB2D5FA7296EBCB500C9DFA3 /* KiKeyBoardCus */ = {
+			isa = PBXGroup;
+			children = (
+				EB351D2D296FAC3E0034D4F2 /* KiKeyBoardCus.entitlements */,
+				EB2D5FA8296EBCB500C9DFA3 /* KeyboardViewController.swift */,
+				EB2D5FB1296EBD0600C9DFA3 /* KeyBoardTopBar.swift */,
+				EB2D5FB3296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift */,
+				EB2D5FB5296EC76A00C9DFA3 /* KeyBoardManager.swift */,
+				EB2D5FAA296EBCB500C9DFA3 /* Info.plist */,
+			);
+			path = KiKeyBoardCus;
 			sourceTree = "<group>";
 		};
 		EB4E385926CB9B1500D1FE4D /* View */ = {
@@ -288,6 +292,7 @@
 				EB7A2B7926C4D81000F25D38 /* TEST.h */,
 				EB7A2B7A26C4D81000F25D38 /* TEST.m */,
 				EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */,
+				EB351D2E2970EC310034D4F2 /* configstore.storekit */,
 			);
 			name = RootTree;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */,
 				EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */,
 				EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */,
+				EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */,
 				EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */,
 				EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */,
 				EBAE32A126D78E8600FFC212 /* specialSymbolList.json */,
@@ -322,47 +328,6 @@
 				EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */,
 			);
 			path = ToolStuff;
-			sourceTree = "<group>";
-		};
-		EB7A2B9126C502B000F25D38 /* ManagerDataOld */ = {
-			isa = PBXGroup;
-			children = (
-				EB7A2B9526C502B900F25D38 /* KeyBFuHao.json */,
-				EB7A2B9326C502B900F25D38 /* KeyBStuffDataMana.swift */,
-				EB7A2B9226C502B900F25D38 /* KeyBTag.json */,
-			);
-			path = ManagerDataOld;
-			sourceTree = "<group>";
-		};
-		EB7A2B9A26C502D300F25D38 /* CustomKeyBtn */ = {
-			isa = PBXGroup;
-			children = (
-				EB7A2B9C26C502E200F25D38 /* KBKeyBtnManager.swift */,
-				EB7A2B9E26C502E200F25D38 /* KeyBKeyBtn.swift */,
-				EB7A2B9D26C502E200F25D38 /* KeyboardView.swift */,
-				EB7A2B9B26C502E200F25D38 /* KeyBstyleList.json */,
-			);
-			path = CustomKeyBtn;
-			sourceTree = "<group>";
-		};
-		EB95E6F727EC134D002405EF /* KIViews */ = {
-			isa = PBXGroup;
-			children = (
-				EB95E6F827EC136A002405EF /* KIkTopMenuBar.swift */,
-				EB95E6FA27EC1488002405EF /* KIkFontSelectV.swift */,
-				EB95E6FC27EC155C002405EF /* KIkFavoriteSelectV.swift */,
-			);
-			path = KIViews;
-			sourceTree = "<group>";
-		};
-		EB95E6FE27EC1970002405EF /* KIDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				EB95E6FF27EC19BE002405EF /* KIDataManager.swift */,
-				EB71229C27F15F22000F04D6 /* KIkkKeyBoard-Bridging-Header.h */,
-				EB7A2B9A26C502D300F25D38 /* CustomKeyBtn */,
-			);
-			path = KIDataManager;
 			sourceTree = "<group>";
 		};
 		EB9F2E8D26DA56590027484A /* TextPicCard */ = {
@@ -420,6 +385,7 @@
 			children = (
 				EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */,
 				EBE60E2229448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift */,
+				EB351D322972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift */,
 			);
 			path = NeSettingGroup;
 			sourceTree = "<group>";
@@ -428,7 +394,6 @@
 			isa = PBXGroup;
 			children = (
 				EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */,
-				EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */,
 			);
 			path = NeStoreGroup;
 			sourceTree = "<group>";
@@ -437,7 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF8BCBA268EC32700DA318F /* KIkbsKeyBoard */,
-				EBF8BCD4268ECD2400DA318F /* KIkkKeyBoard */,
+				EB2D5FA7296EBCB500C9DFA3 /* KiKeyBoardCus */,
 				EBF8BCB9268EC32700DA318F /* Products */,
 				496934D9F5DB9F2EDCE4C5A6 /* Pods */,
 				6CCC964E813400C3FC13BE47 /* Frameworks */,
@@ -448,7 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */,
-				EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */,
+				EB2D5FA6296EBCB500C9DFA3 /* KiKeyBoardCus.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -465,22 +430,27 @@
 			path = KIkbsKeyBoard;
 			sourceTree = "<group>";
 		};
-		EBF8BCD4268ECD2400DA318F /* KIkkKeyBoard */ = {
-			isa = PBXGroup;
-			children = (
-				EBA00AAE27ED5ECD00AB3CC2 /* KIkkKeyBoard.entitlements */,
-				EBF8BCD5268ECD2400DA318F /* KeyboardViewController.swift */,
-				EB95E6FE27EC1970002405EF /* KIDataManager */,
-				EB95E6F727EC134D002405EF /* KIViews */,
-				EB7A2B9126C502B000F25D38 /* ManagerDataOld */,
-				EBF8BCD7268ECD2400DA318F /* Info.plist */,
-			);
-			path = KIkkKeyBoard;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EB2D5FA5296EBCB500C9DFA3 /* KiKeyBoardCus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2D5FAE296EBCB500C9DFA3 /* Build configuration list for PBXNativeTarget "KiKeyBoardCus" */;
+			buildPhases = (
+				838C5E9CF7D9917E0341F18C /* [CP] Check Pods Manifest.lock */,
+				EB2D5FA2296EBCB500C9DFA3 /* Sources */,
+				EB2D5FA3296EBCB500C9DFA3 /* Frameworks */,
+				EB2D5FA4296EBCB500C9DFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KiKeyBoardCus;
+			productName = KiKeyBoardCus;
+			productReference = EB2D5FA6296EBCB500C9DFA3 /* KiKeyBoardCus.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		EBF8BCB7268EC32700DA318F /* KIkbsKeyBoard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF8BCCC268EC32D00DA318F /* Build configuration list for PBXNativeTarget "KIkbsKeyBoard" */;
@@ -495,30 +465,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				EBF8BCD9268ECD2400DA318F /* PBXTargetDependency */,
+				EB2D5FAC296EBCB500C9DFA3 /* PBXTargetDependency */,
 			);
 			name = KIkbsKeyBoard;
 			productName = KIkbsKeyBoard;
 			productReference = EBF8BCB8268EC32700DA318F /* KIkbsKeyBoard.app */;
 			productType = "com.apple.product-type.application";
-		};
-		EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EBF8BCDB268ECD2400DA318F /* Build configuration list for PBXNativeTarget "KIkkKeyBoard" */;
-			buildPhases = (
-				EF24BF524763CDECB3F2886B /* [CP] Check Pods Manifest.lock */,
-				EBF8BCCF268ECD2400DA318F /* Sources */,
-				EBF8BCD0268ECD2400DA318F /* Frameworks */,
-				EBF8BCD1268ECD2400DA318F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KIkkKeyBoard;
-			productName = KIkkKeyBoard;
-			productReference = EBF8BCD3268ECD2400DA318F /* KIkkKeyBoard.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -526,16 +478,15 @@
 		EBF8BCB0268EC32700DA318F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					EB2D5FA5296EBCB500C9DFA3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					EBF8BCB7268EC32700DA318F = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
-					};
-					EBF8BCD2268ECD2400DA318F = {
-						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -553,12 +504,19 @@
 			projectRoot = "";
 			targets = (
 				EBF8BCB7268EC32700DA318F /* KIkbsKeyBoard */,
-				EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */,
+				EB2D5FA5296EBCB500C9DFA3 /* KiKeyBoardCus */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EB2D5FA4296EBCB500C9DFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8BCB6268EC32700DA318F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -574,17 +532,6 @@
 				EB9407CE26F3819400CB4A66 /* textTransform_Font.json in Resources */,
 				EB960C5426DFD1AA00EDB86A /* textCardOverlayerImg.json in Resources */,
 				EBF8BCC3268EC32700DA318F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBF8BCD1268ECD2400DA318F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB7A2B9926C502B900F25D38 /* KeyBFuHao.json in Resources */,
-				EB7A2B9626C502B900F25D38 /* KeyBTag.json in Resources */,
-				EB4634FA27146719005877C2 /* Assets.xcassets in Resources */,
-				EB7A2B9F26C502E300F25D38 /* KeyBstyleList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +553,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KIkbsKeyBoard/Pods-KIkbsKeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838C5E9CF7D9917E0341F18C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KiKeyBoardCus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC089E9B2C4CD4FFA25CA8E3 /* [CP] Check Pods Manifest.lock */ = {
@@ -630,31 +599,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF24BF524763CDECB3F2886B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KIkkKeyBoard-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EB2D5FA2296EBCB500C9DFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2D5FB6296EC76A00C9DFA3 /* KeyBoardManager.swift in Sources */,
+				EB2D5FB4296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift in Sources */,
+				EB2D5FB2296EBD0600C9DFA3 /* KeyBoardTopBar.swift in Sources */,
+				EB2D5FB7296EC7C000C9DFA3 /* KIkbsKeboardFavoriteDB.swift in Sources */,
+				EB2D5FA9296EBCB500C9DFA3 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8BCB4268EC32700DA318F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -669,6 +628,7 @@
 				EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */,
 				EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */,
 				EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */,
+				EB351D332972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift in Sources */,
 				EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */,
 				EBBBA803293DDB5000211CCF /* KEkeyMainVC.swift in Sources */,
 				EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */,
@@ -702,30 +662,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBF8BCCF268ECD2400DA318F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBF8BCD6268ECD2400DA318F /* KeyboardViewController.swift in Sources */,
-				EB95E6FB27EC1488002405EF /* KIkFontSelectV.swift in Sources */,
-				EB7A2BA126C502E300F25D38 /* KeyboardView.swift in Sources */,
-				EB7A2B9726C502B900F25D38 /* KeyBStuffDataMana.swift in Sources */,
-				EB95E70027EC19BE002405EF /* KIDataManager.swift in Sources */,
-				EB95E70127EC21D4002405EF /* KIkbsKeboardFavoriteDB.swift in Sources */,
-				EB95E6FD27EC155C002405EF /* KIkFavoriteSelectV.swift in Sources */,
-				EB95E6F927EC136A002405EF /* KIkTopMenuBar.swift in Sources */,
-				EB7A2BA026C502E300F25D38 /* KBKeyBtnManager.swift in Sources */,
-				EB7A2BA226C502E300F25D38 /* KeyBKeyBtn.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EBF8BCD9268ECD2400DA318F /* PBXTargetDependency */ = {
+		EB2D5FAC296EBCB500C9DFA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBF8BCD2268ECD2400DA318F /* KIkkKeyBoard */;
-			targetProxy = EBF8BCD8268ECD2400DA318F /* PBXContainerItemProxy */;
+			target = EB2D5FA5296EBCB500C9DFA3 /* KiKeyBoardCus */;
+			targetProxy = EB2D5FAB296EBCB500C9DFA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -749,6 +692,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EB2D5FAF296EBCB500C9DFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AE30F60F795351D6DC0D42 /* Pods-KiKeyBoardCus.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = KiKeyBoardCus/KiKeyBoardCus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97Y24FFSPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KiKeyBoardCus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KiKeyBoardCus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.888888.KiKeyBoardCus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB2D5FB0296EBCB500C9DFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6B05ABD2B364CCC31DD5D3 /* Pods-KiKeyBoardCus.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = KiKeyBoardCus/KiKeyBoardCus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97Y24FFSPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KiKeyBoardCus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KiKeyBoardCus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.888888.KiKeyBoardCus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EBF8BCCA268EC32D00DA318F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -800,7 +805,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -855,7 +860,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -874,18 +879,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KIkbsKeyBoard/KIkbsKeyBoard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 53ADUL6525;
+				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.superegg.okeydokey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -905,18 +913,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KIkbsKeyBoard/KIkbsKeyBoard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 53ADUL6525;
+				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.superegg.okeydokey;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -926,60 +937,18 @@
 			};
 			name = Release;
 		};
-		EBF8BCDC268ECD2400DA318F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 302EA592D6F099D6EAC6BC81 /* Pods-KIkkKeyBoard.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = KIkkKeyBoard/KIkkKeyBoard.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 53ADUL6525;
-				INFOPLIST_FILE = KIkkKeyBoard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.superegg.okeydokey.KIkkKeyBoard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "KIkkKeyBoard/KIDataManager/KIkkKeyBoard-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		EBF8BCDD268ECD2400DA318F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E3BD017BD24FA42F1738B4D /* Pods-KIkkKeyBoard.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = KIkkKeyBoard/KIkkKeyBoard.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
-				DEVELOPMENT_TEAM = 53ADUL6525;
-				INFOPLIST_FILE = KIkkKeyBoard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.superegg.okeydokey.KIkkKeyBoard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "KIkkKeyBoard/KIDataManager/KIkkKeyBoard-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EB2D5FAE296EBCB500C9DFA3 /* Build configuration list for PBXNativeTarget "KiKeyBoardCus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2D5FAF296EBCB500C9DFA3 /* Debug */,
+				EB2D5FB0296EBCB500C9DFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBF8BCB3268EC32700DA318F /* Build configuration list for PBXProject "KIkbsKeyBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -994,15 +963,6 @@
 			buildConfigurations = (
 				EBF8BCCD268EC32D00DA318F /* Debug */,
 				EBF8BCCE268EC32D00DA318F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EBF8BCDB268ECD2400DA318F /* Build configuration list for PBXNativeTarget "KIkkKeyBoard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EBF8BCDC268ECD2400DA318F /* Debug */,
-				EBF8BCDD268ECD2400DA318F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

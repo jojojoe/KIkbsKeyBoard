@@ -17,7 +17,7 @@ class KEkeyNeSpecialTextVC: UIViewController, UITextViewDelegate {
     lazy var pagingView: JXPagingView = JXPagingView(delegate: self)
     lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: CGFloat(headerInSectionHeight)))
     var dataSource = JXSegmentedTitleDataSource()
-    var titles = [" Symbol ", " Quote ", "  Emoji  ", "  Shape  "]
+    var titles = [" Symbol ", "  Emoji  ", " Quote ", "  Shape  "]
     let bottomCanvasView = UIView()
     let textInputView = DPTextView()
     var toolView = UIView()
@@ -201,6 +201,11 @@ extension KEkeyNeSpecialTextVC {
             KIkbsKeboardFavoriteDB.default.addKeyFavoriteContent(favoriteKeyOnly: keyOnly, groupNameKeyOnly: groupOnlyKey, favoriteContentStr: newInputText) {
                 DispatchQueue.main.async {
                     ZKProgressHUD.showSuccess("Already saved to favorites")
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: noti_favoriteFetch),
+                        object: nil,
+                        userInfo: nil
+                    )
                 }
             }
         } else {
@@ -253,7 +258,7 @@ extension KEkeyNeSpecialTextVC: JXPagingViewDelegate {
             }
             return contentView
         } else if index == 1 {
-            let contentView = KIkbsSpecialStrPreviewView(frame: .zero, specialStrType: .quote)
+            let contentView = KIkbsSpecialStrPreviewView(frame: .zero, specialStrType: .emojiStr)
             contentView.clickSpecialStrBlock = {
                 [weak self] specialStr, isProBundle in
                 guard let `self` = self else {return}
@@ -263,7 +268,7 @@ extension KEkeyNeSpecialTextVC: JXPagingViewDelegate {
             }
             return contentView
         } else if index == 2 {
-            let contentView = KIkbsSpecialStrPreviewView(frame: .zero, specialStrType: .emojiStr)
+            let contentView = KIkbsSpecialStrPreviewView(frame: .zero, specialStrType: .quote)
             contentView.clickSpecialStrBlock = {
                 [weak self] specialStr, isProBundle in
                 guard let `self` = self else {return}

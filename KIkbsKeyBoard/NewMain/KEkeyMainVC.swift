@@ -153,12 +153,13 @@ class KEkeyMainVC: UIViewController {
         }
         
         //
-        
+        settingPageVC.fatherVC = self
         canvasBgV.addSubview(settingPageVC.view)
         settingPageVC.view.snp.makeConstraints {
             $0.left.right.top.bottom.equalToSuperview()
         }
         
+        //
         showToolContentView(btn: transBtn, toolV: transPageVC.view)
     }
     

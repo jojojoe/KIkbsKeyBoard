@@ -50,6 +50,9 @@
             ReferencedContainer = "container:KIkbsKeyBoard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <StoreKitConfigurationFileReference
+         identifier = "../KIkbsKeyBoard/configstore.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

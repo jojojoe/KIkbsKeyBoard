@@ -20,18 +20,29 @@ class KEkeyNeSettingVC: UIViewController {
     let topBar = UIView()
     var collection: UICollectionView!
     let bottomCanvasView = UIView()
+    var fatherVC: KEkeyMainVC?
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSubscribeNotic()
         loadData()
         contentViewSetup()
         setupCollection()
+        
     }
     
+    
+    func addSubscribeNotic() {
+        //
+        NotificationCenter.default.addObserver(self, selector: #selector(updateSubscribeSuccessStatus(noti: )), name: NSNotification.Name(rawValue: PurchaseStatusNotificationKeys.success), object: nil)
+    }
+    
+    @objc func updateSubscribeSuccessStatus(noti: Notification) {
+        updateSubscribeStatus()
+    }
     
     func loadData() {
         
         let terms = KIkbsSettingItem(iconImgName: "terms", titleName: "Terms Of Use")
- 
         let privacy = KIkbsSettingItem(iconImgName: "privacy", titleName: "Privacy Policy")
         let feedback = KIkbsSettingItem(iconImgName: "feed", titleName: "Feedback")
         let keyboardAccest = KIkbsSettingItem(iconImgName: "keyborad", titleName: "Keyborad Setting")
@@ -163,13 +174,13 @@ extension KEkeyNeSettingVC: UICollectionViewDelegate {
         if item.iconImgName == "terms" {
             let vc = KEkeyNeInfoPagePreviewVC()
             vc.toplabel.text = "Terms of Use"
-            vc.contentTextV.text = vc.termsofInfoStr
-            self.navigationController?.pushViewController(vc, animated: true)
+            vc.contentTextV.text = termsofInfoStr
+            self.fatherVC?.present(vc)
         } else if item.iconImgName == "privacy" {
             let vc = KEkeyNeInfoPagePreviewVC()
             vc.toplabel.text = "Privacy Policy"
-            vc.contentTextV.text = vc.privacyInfoStr
-            self.navigationController?.pushViewController(vc, animated: true)
+            vc.contentTextV.text = privacyInfoStr
+            self.fatherVC?.present(vc)
         } else if item.iconImgName == "feed" {
             showFeedback()
         } else if item.iconImgName == "keyborad" {
