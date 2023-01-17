@@ -372,14 +372,14 @@ extension KEkeyNeTextCardVC {
         }
     }
     
-    func closeKeyboradAction(text: String?) {
+    func closeKeyboardAction(text: String?) {
         self.textinputView.endEditing(true)
 //        self.watermarkTextFeild.resignFirstResponder()
         self.cardWatermarkBar.updateEnterTextStr(textStr: text)
     }
     
     @objc func watermarkTextFeildHiddenBtnClick(sender: UIButton) {
-        self.closeKeyboradAction(text: self.textinputView.text)
+        self.closeKeyboardAction(text: self.textinputView.text)
     }
     
 //    func resetupTextFeild() {
@@ -669,42 +669,3 @@ extension KEkeyNeTextCardVC: UITextViewDelegate {
         return true
     }
 }
-
-//extension KEkeyNeTextCardVC: UITextFieldDelegate {
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        debugPrint("textFieldDidEndEditing")
-//    }
-//
-//    func textFieldDidChangeSelection(_ textField: UITextField) {
-//        updateWatermark(textStr: textField.text)
-//
-//        debugPrint("did Changeing")
-//    }
-//
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//
-////        updateWatermark(textStr: textField.text)
-//
-//        if string == "" {
-//
-//        } else {
-////            TaskDelay.default.taskDelay(afterTime: 0.8) {[weak self] in
-////                guard let `self` = self else {return}
-////            }
-//        }
-//        debugPrint("shouldChangeCharactersIn")
-//        return true
-//    }
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        closeKeyboradAction(text: textField.text)
-//
-//
-//        return true
-//    }
-//
-//
-//}
-
-
-

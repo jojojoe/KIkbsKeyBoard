@@ -35,7 +35,7 @@ public enum VerifyLocalSubscriptionResult {
 class KIkbsPurchaseManager {
     
     static let `default` = KIkbsPurchaseManager()
-    var test: Bool = false
+    var test: Bool = true
     var isLocalVerify = true
     
     public var receiptInfo: ReceiptInfo? {

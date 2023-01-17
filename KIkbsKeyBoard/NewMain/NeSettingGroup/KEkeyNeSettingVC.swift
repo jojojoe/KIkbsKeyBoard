@@ -45,7 +45,7 @@ class KEkeyNeSettingVC: UIViewController {
         let terms = KIkbsSettingItem(iconImgName: "terms", titleName: "Terms Of Use")
         let privacy = KIkbsSettingItem(iconImgName: "privacy", titleName: "Privacy Policy")
         let feedback = KIkbsSettingItem(iconImgName: "feed", titleName: "Feedback")
-        let keyboardAccest = KIkbsSettingItem(iconImgName: "keyborad", titleName: "Keyborad Setting")
+        let keyboardAccest = KIkbsSettingItem(iconImgName: "Keyboards", titleName: "Keyboards Setting")
         let subscribe = KIkbsSettingItem(iconImgName: "subscribe", titleName: "Subscribe Now")
         if KIkbsPurchaseManager.default.inSubscription {
             list = [terms, privacy, feedback, keyboardAccest]
@@ -183,12 +183,10 @@ extension KEkeyNeSettingVC: UICollectionViewDelegate {
             self.fatherVC?.present(vc)
         } else if item.iconImgName == "feed" {
             showFeedback()
-        } else if item.iconImgName == "keyborad" {
-            let urlString = "App-Prefs:root=General&path=Keyboard"
-            if let url = URL(string: urlString) {
-                if UIApplication.shared.canOpenURL(url) {
-                    UIApplication.shared.openURL(url: url)
-                }
+        } else if item.iconImgName == "Keyboards" {
+            
+            if let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
             }
         } else if item.iconImgName == "subscribe" {
             let vc = KIkbsStoreVC()

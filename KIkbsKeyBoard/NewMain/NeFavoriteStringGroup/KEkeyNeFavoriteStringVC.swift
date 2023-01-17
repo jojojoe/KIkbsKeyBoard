@@ -80,7 +80,7 @@ class KEkeyNeFavoriteStringVC: UIViewController {
         //
         let titNameLabel = UILabel()
         titNameLabel.adhere(toSuperview: topBar)
-            .text("Special Text")
+            .text("Favorite Text")
             .color(.black)
             .fontName(16, "Futura-CondensedExtraBold")
         titNameLabel.snp.makeConstraints {

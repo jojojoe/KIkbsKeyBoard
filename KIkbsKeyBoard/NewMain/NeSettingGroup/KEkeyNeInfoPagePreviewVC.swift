@@ -37,7 +37,6 @@ class KEkeyNeInfoPagePreviewVC: UIViewController {
         //
         
         toplabel.adhere(toSuperview: topBar)
-            .text("Text Card")
             .color(.black)
             .fontName(16, "Futura-CondensedExtraBold")
         toplabel.snp.makeConstraints {

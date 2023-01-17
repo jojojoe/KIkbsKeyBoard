@@ -17,22 +17,17 @@
 		EB351D332972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB351D322972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift */; };
 		EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */; };
 		EB4E385B26CB9F2D00D1FE4D /* ConfigTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */; };
-		EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */; };
-		EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */; };
 		EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */; };
 		EB5EE3C02941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */; };
 		EB5EE3C32941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */; };
 		EB5EE3C62942DAAA0015B3BA /* KEkeyNeTextCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */; };
-		EB7A2B7726C4D7DB00F25D38 /* KIkbsMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */; };
 		EB7A2B7B26C4D81000F25D38 /* TEST.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7A26C4D81000F25D38 /* TEST.m */; };
-		EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */; };
 		EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */; };
 		EB7A2B8226C4FF3900F25D38 /* ExtensionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */; };
 		EB88FDE226D37FD7005BD007 /* LLMorseCodeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */; };
 		EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */; };
 		EB88FE4526D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */; };
 		EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */; };
-		EB8CD38526DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */; };
 		EB9407CC26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9407CB26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift */; };
 		EB9407CE26F3819400CB4A66 /* textTransform_Font.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CD26F3819400CB4A66 /* textTransform_Font.json */; };
 		EB9407D026F381C300CB4A66 /* textTransform_LeftAdd.json in Resources */ = {isa = PBXBuildFile; fileRef = EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */; };
@@ -47,9 +42,7 @@
 		EB9F2E8C26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2E8B26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift */; };
 		EBA03FA526E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */; };
 		EBA03FA726E5C51600BE0043 /* KIkbsCardTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */; };
-		EBA4E96226D52C8700E58274 /* KIkbsSpecialTextLibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */; };
 		EBABA52926D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */; };
-		EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */; };
 		EBABA53126D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */; };
 		EBAE32A026D7875500FFC212 /* KIkbsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */; };
 		EBAE32A226D78E8600FFC212 /* specialSymbolList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A126D78E8600FFC212 /* specialSymbolList.json */; };
@@ -113,24 +106,19 @@
 		EB351D322972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyboardSetGuideVC.swift; sourceTree = "<group>"; };
 		EB4E385726CB6CB700D1FE4D /* ZalgoStringMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalgoStringMaker.swift; sourceTree = "<group>"; };
 		EB4E385A26CB9F2D00D1FE4D /* ConfigTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTool.swift; sourceTree = "<group>"; };
-		EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainToolBarBtn.swift; sourceTree = "<group>"; };
-		EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTransformVC.swift; sourceTree = "<group>"; };
 		EB4E399D26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTypeTransformView.swift; sourceTree = "<group>"; };
 		EB5EE3BF2941BA5C0015B3BA /* KEkeyNeSpecialTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeSpecialTextVC.swift; sourceTree = "<group>"; };
 		EB5EE3C22941D3ED0015B3BA /* KEkeyNeFavoriteStringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeFavoriteStringVC.swift; sourceTree = "<group>"; };
 		EB5EE3C52942DAAA0015B3BA /* KEkeyNeTextCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeTextCardVC.swift; sourceTree = "<group>"; };
-		EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMainVC.swift; sourceTree = "<group>"; };
 		EB7A2B7826C4D80F00F25D38 /* KIkbsKeyBoard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIkbsKeyBoard-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB7A2B7926C4D81000F25D38 /* TEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEST.h; sourceTree = "<group>"; };
 		EB7A2B7A26C4D81000F25D38 /* TEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST.m; sourceTree = "<group>"; };
-		EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSettingVC.swift; sourceTree = "<group>"; };
 		EB7A2B7E26C4D83600F25D38 /* KIkbsStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsStoreVC.swift; sourceTree = "<group>"; };
 		EB7A2B8126C4FF3900F25D38 /* ExtensionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTool.swift; sourceTree = "<group>"; };
 		EB88FDE126D37FD7005BD007 /* LLMorseCodeTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMorseCodeTranslator.swift; sourceTree = "<group>"; };
 		EB88FDE326D3802D005BD007 /* KIkbsMorseCodeTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsMorseCodeTransformView.swift; sourceTree = "<group>"; };
 		EB88FE4426D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextLeftRightTransformView.swift; sourceTree = "<group>"; };
 		EB88FE4726D3B708005BD007 /* KIkbsTextCenterTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextCenterTransformView.swift; sourceTree = "<group>"; };
-		EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextCardPicVC.swift; sourceTree = "<group>"; };
 		EB9407CB26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsTextTransformManager.swift; sourceTree = "<group>"; };
 		EB9407CD26F3819400CB4A66 /* textTransform_Font.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_Font.json; sourceTree = "<group>"; };
 		EB9407CF26F381C300CB4A66 /* textTransform_LeftAdd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = textTransform_LeftAdd.json; sourceTree = "<group>"; };
@@ -146,9 +134,7 @@
 		EBA00AAD27ED5EB600AB3CC2 /* KIkbsKeyBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KIkbsKeyBoard.entitlements; sourceTree = "<group>"; };
 		EBA03FA426E5BF8D00BE0043 /* KIkbsCardCanvasTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardCanvasTextView.swift; sourceTree = "<group>"; };
 		EBA03FA626E5C51600BE0043 /* KIkbsCardTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsCardTextInputView.swift; sourceTree = "<group>"; };
-		EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialTextLibVC.swift; sourceTree = "<group>"; };
 		EBABA52826D8EE9C002EE5F5 /* KIkbsPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsPurchaseManager.swift; sourceTree = "<group>"; };
-		EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeyboardFavoriteVC.swift; sourceTree = "<group>"; };
 		EBABA53026D930DB002EE5F5 /* KIkbsKeyboardFavoritePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsKeyboardFavoritePageView.swift; sourceTree = "<group>"; };
 		EBAE329F26D7875500FFC212 /* KIkbsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsDataManager.swift; sourceTree = "<group>"; };
 		EBAE32A126D78E8600FFC212 /* specialSymbolList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialSymbolList.json; sourceTree = "<group>"; };
@@ -226,26 +212,6 @@
 			path = KiKeyBoardCus;
 			sourceTree = "<group>";
 		};
-		EB4E385926CB9B1500D1FE4D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EB4E385C26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift */,
-				EB9F2E8D26DA56590027484A /* TextPicCard */,
-				EBABA52A26D928BB002EE5F5 /* KeyboardFavorite */,
-				EBA4E96026D52C5000E58274 /* SpecialTextLib */,
-				EB4E399F26CCE62D00D1FE4D /* TextTransform */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EB4E399F26CCE62D00D1FE4D /* TextTransform */ = {
-			isa = PBXGroup;
-			children = (
-				EB4E385E26CCA4D300D1FE4D /* KIkbsTextTransformVC.swift */,
-			);
-			path = TextTransform;
-			sourceTree = "<group>";
-		};
 		EB5EE3BE2941B8310015B3BA /* NeSpecialTextGroup */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,16 +263,6 @@
 			name = RootTree;
 			sourceTree = "<group>";
 		};
-		EB7A2B7526C4D7C500F25D38 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				EB7A2B7626C4D7DB00F25D38 /* KIkbsMainVC.swift */,
-				EB7A2B7C26C4D82C00F25D38 /* KIkbsSettingVC.swift */,
-				EB4E385926CB9B1500D1FE4D /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		EB7A2B8026C4FF2400F25D38 /* ToolStuff */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,30 +284,6 @@
 				EB9407D126F381DF00CB4A66 /* textTransform_Zalgo.json */,
 			);
 			path = ToolStuff;
-			sourceTree = "<group>";
-		};
-		EB9F2E8D26DA56590027484A /* TextPicCard */ = {
-			isa = PBXGroup;
-			children = (
-				EB8CD38426DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift */,
-			);
-			path = TextPicCard;
-			sourceTree = "<group>";
-		};
-		EBA4E96026D52C5000E58274 /* SpecialTextLib */ = {
-			isa = PBXGroup;
-			children = (
-				EBA4E96126D52C8700E58274 /* KIkbsSpecialTextLibVC.swift */,
-			);
-			path = SpecialTextLib;
-			sourceTree = "<group>";
-		};
-		EBABA52A26D928BB002EE5F5 /* KeyboardFavorite */ = {
-			isa = PBXGroup;
-			children = (
-				EBABA52E26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift */,
-			);
-			path = KeyboardFavorite;
 			sourceTree = "<group>";
 		};
 		EBBBA801293DCC6A00211CCF /* NewMain */ = {
@@ -424,7 +356,6 @@
 				EBBBA801293DCC6A00211CCF /* NewMain */,
 				EBA00AAD27ED5EB600AB3CC2 /* KIkbsKeyBoard.entitlements */,
 				EB7A2B8026C4FF2400F25D38 /* ToolStuff */,
-				EB7A2B7526C4D7C500F25D38 /* Main */,
 				EB7A2B7426C4D7AA00F25D38 /* RootTree */,
 			);
 			path = KIkbsKeyBoard;
@@ -627,22 +558,17 @@
 				EBBBA806293DFB9700211CCF /* KEkeyNeTransformVC.swift in Sources */,
 				EB960C4E26DF791E00EDB86A /* KIkbsCardTextInputBar.swift in Sources */,
 				EB4E399E26CCE62A00D1FE4D /* KIkbsTextTypeTransformView.swift in Sources */,
-				EBABA52F26D92965002EE5F5 /* KIkbsKeyboardFavoriteVC.swift in Sources */,
 				EB351D332972AFD10034D4F2 /* KEkeyboardSetGuideVC.swift in Sources */,
 				EB7A2B7F26C4D83600F25D38 /* KIkbsStoreVC.swift in Sources */,
 				EBBBA803293DDB5000211CCF /* KEkeyMainVC.swift in Sources */,
 				EB88FE4826D3B708005BD007 /* KIkbsTextCenterTransformView.swift in Sources */,
 				EBF8BCC0268EC32700DA318F /* ViewController.swift in Sources */,
 				EB88FDE426D3802D005BD007 /* KIkbsMorseCodeTransformView.swift in Sources */,
-				EB7A2B7D26C4D82C00F25D38 /* KIkbsSettingVC.swift in Sources */,
 				EBF8BCBC268EC32700DA318F /* AppDelegate.swift in Sources */,
-				EB7A2B7726C4D7DB00F25D38 /* KIkbsMainVC.swift in Sources */,
-				EBA4E96226D52C8700E58274 /* KIkbsSpecialTextLibVC.swift in Sources */,
 				EB88FE4526D3AF01005BD007 /* KIkbsTextLeftRightTransformView.swift in Sources */,
 				EB960C4A26DF71C500EDB86A /* KIkbsCardWatermarkOverlayer.swift in Sources */,
 				EB9F2E8C26DA47D40027484A /* KIkbsKeboardFavoriteDB.swift in Sources */,
 				EBF8BCBE268EC32700DA318F /* SceneDelegate.swift in Sources */,
-				EB4E385D26CBA3DD00D1FE4D /* KIkbsMainToolBarBtn.swift in Sources */,
 				EB4E385826CB6CB700D1FE4D /* ZalgoStringMaker.swift in Sources */,
 				EB88FDE226D37FD7005BD007 /* LLMorseCodeTranslator.swift in Sources */,
 				EBA03FA726E5C51600BE0043 /* KIkbsCardTextInputView.swift in Sources */,
@@ -653,8 +579,6 @@
 				EB960C5026DF793D00EDB86A /* KIkbsCardThemeColorBar.swift in Sources */,
 				EB9407CC26F37A8A00CB4A66 /* KIkbsTextTransformManager.swift in Sources */,
 				EBE60E2329448E62004DF203 /* KEkeyNeInfoPagePreviewVC.swift in Sources */,
-				EB8CD38526DE2F9A0098FE6C /* KIkbsTextCardPicVC.swift in Sources */,
-				EB4E385F26CCA4D400D1FE4D /* KIkbsTextTransformVC.swift in Sources */,
 				EBAE32A026D7875500FFC212 /* KIkbsDataManager.swift in Sources */,
 				EB99D90426D6734900B0F50F /* KIkbsSpecialStrPreviewView.swift in Sources */,
 				EB5EE3C62942DAAA0015B3BA /* KEkeyNeTextCardVC.swift in Sources */,
@@ -704,7 +628,7 @@
 				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KiKeyBoardCus/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KiKeyBoardCus;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageKeyboard;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -735,7 +659,7 @@
 				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KiKeyBoardCus/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KiKeyBoardCus;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageKeyboard;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -884,7 +808,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				INFOPLIST_KEY_CFBundleDisplayName = ArtText;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -900,7 +824,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -918,7 +842,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = 97Y24FFSPP;
 				INFOPLIST_FILE = KIkbsKeyBoard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				INFOPLIST_KEY_CFBundleDisplayName = ArtText;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -933,7 +857,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
