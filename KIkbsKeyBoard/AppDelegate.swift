@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initMainVC()
         trackeringAuthor()
         
+        
         return true
     }
 
@@ -69,6 +70,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          
     }
 
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        return true
+    }
+
+    
 }
 
 extension AppDelegate {
@@ -126,5 +134,4 @@ extension AppDelegate {
             }
         }
     }
-    
 }

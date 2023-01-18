@@ -15,6 +15,7 @@ class KeyboardViewController: UIInputViewController {
     var topBar: KeyBoardTopBar = KeyBoardTopBar()
     var bottomBar: KeyBoardContentPreview = KeyBoardContentPreview()
     let globalBtn = UIButton()
+    var gotoaddBtn = UIButton()
     
     
     override func updateViewConstraints() {
@@ -27,13 +28,24 @@ class KeyboardViewController: UIInputViewController {
   
         
         self.setupView()
-        self.globalBtn.isHidden = !self.needsInputModeSwitchKey
+        
         
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.globalBtn.isHidden = !self.needsInputModeSwitchKey
+        debugPrint("self.needsInputModeSwitchKey = \(self.needsInputModeSwitchKey)")
+        debugPrint("self.globalBtn = \(self.globalBtn)")
+        
+        
+        
+        if topBar.favoriteGroupList.count == 1 && bottomBar.favoriteStrList.count == 0 {
+            gotoaddBtn.isHidden = false
+        } else {
+            gotoaddBtn.isHidden = true
+        }
         
     }
     
@@ -75,15 +87,29 @@ class KeyboardViewController: UIInputViewController {
         //
 
         view.addSubview(globalBtn)
-        globalBtn.setImage(UIImage(named: "net_work_ic"), for: .normal)
+        globalBtn.setImage(UIImage(named: "globe_ic"), for: .normal)
         globalBtn.snp.makeConstraints {
-            $0.bottom.equalToSuperview().offset(-10)
+            $0.bottom.equalTo(bottomBar.snp.bottom).offset(-10)
             $0.left.equalToSuperview().offset(10)
             $0.width.height.equalTo(38)
         }
         globalBtn.addTarget(self, action: #selector(globalBtnClick(sender: )), for: .touchUpInside)
         
         //
+        view.addSubview(gotoaddBtn)
+        gotoaddBtn.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(bottomBar.snp.top).offset(60)
+            $0.width.equalTo(180)
+            $0.height.equalTo(45)
+        }
+        gotoaddBtn.backgroundColor = UIColor(hexString: "#000000")!.withAlphaComponent(0.8)
+        gotoaddBtn.setTitle("Add messages", for: .normal)
+        gotoaddBtn.setTitleColor(.white, for: .normal)
+        gotoaddBtn.titleLabel?.font = UIFont(name: "AvenirNext-Bold", size: 14)
+        gotoaddBtn.layer.cornerRadius = 8
+        gotoaddBtn.addTarget(self, action: #selector(gotoaddBtnClick(sender: )), for: .touchUpInside)
+        
     }
     
     func updateSetupView() {
@@ -113,7 +139,11 @@ class KeyboardViewController: UIInputViewController {
          
     }
 
-  
+    func inputContentStr(textStr: String) {
+        self.textDocumentProxy.insertText(textStr)
+        self.textDocumentProxy.insertText("\n")
+    }
+    
     
 }
 
@@ -124,11 +154,34 @@ extension KeyboardViewController {
         self.advanceToNextInputMode()
     }
     
-    func inputContentStr(textStr: String) {
-        self.textDocumentProxy.insertText(textStr)
-        self.textDocumentProxy.insertText("\n")
+    @objc func gotoaddBtnClick(sender: UIButton) {
+        openHomeApp()
     }
     
+    func openHomeApp() {
+        // 发送通知
+        debugPrint("openHomeApp.sendNotificationForMessage")
+   
+        
+        let scheme = "KiKeyBoardCus://\("Add")"
+        let url: URL = URL(string: scheme)!
+        let context = NSExtensionContext()
+        context.open(url, completionHandler: nil)
+        var responder = self as UIResponder?
+        let selectorOpenURL = sel_registerName("openURL:")
+        while (responder != nil) {
+            if responder!.responds(to: selectorOpenURL) {
+                responder!.perform(selectorOpenURL, with: url)
+                debugPrint("responder!.perform(selectorOpenURL, with: url)")
+                break
+            }
+            responder = responder?.next
+        }
+       
+        debugPrint("self.extensionContext?.completeRequest")
+        self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
+        
+    }
 }
 
 

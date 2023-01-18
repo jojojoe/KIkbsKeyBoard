@@ -51,6 +51,8 @@ class KeyBoardContentPreview: UIView {
             return sr == "*-+-+-+-+-+*"
         }
         self.collection.reloadData()
+        
+         
          
     }
     
@@ -76,8 +78,11 @@ class KeyBoardContentPreview: UIView {
         
         collection.backgroundColor = UIColor(hexString: "#F1F0F4")
         collection.layer.cornerRadius = 2
+        
+       
     }
-
+    
+  
 }
 
 extension KeyBoardContentPreview: UICollectionViewDataSource {

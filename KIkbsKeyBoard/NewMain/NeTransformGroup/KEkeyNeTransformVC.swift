@@ -78,7 +78,7 @@ class KEkeyNeTransformVC: UIViewController, UITextViewDelegate {
         //
         let titNameLabel = UILabel()
         titNameLabel.adhere(toSuperview: topBar)
-            .text("Text Transform")
+            .text("Text Converter")
             .color(.black)
             .fontName(16, "Futura-CondensedExtraBold")
         titNameLabel.snp.makeConstraints {

@@ -49,6 +49,7 @@
 		EBAE32A426D78E9100FFC212 /* specialQuoteList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A326D78E9100FFC212 /* specialQuoteList.json */; };
 		EBAE32A626D78E9C00FFC212 /* specialEmojiStrList.json in Resources */ = {isa = PBXBuildFile; fileRef = EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */; };
 		EBAE32AA26D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */; };
+		EBB350032977DC9000D7D1DC /* globe_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB350022977DC9000D7D1DC /* globe_ic.png */; };
 		EBBBA803293DDB5000211CCF /* KEkeyMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBA802293DDB5000211CCF /* KEkeyMainVC.swift */; };
 		EBBBA806293DFB9700211CCF /* KEkeyNeTransformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBA805293DFB9700211CCF /* KEkeyNeTransformVC.swift */; };
 		EBE60E2129447A3B004DF203 /* KEkeyNeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */; };
@@ -141,6 +142,7 @@
 		EBAE32A326D78E9100FFC212 /* specialQuoteList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialQuoteList.json; sourceTree = "<group>"; };
 		EBAE32A526D78E9C00FFC212 /* specialEmojiStrList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = specialEmojiStrList.json; sourceTree = "<group>"; };
 		EBAE32A926D7A64300FFC212 /* KIkbsSpecialStrLeftIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIkbsSpecialStrLeftIndexView.swift; sourceTree = "<group>"; };
+		EBB350022977DC9000D7D1DC /* globe_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_ic.png; sourceTree = "<group>"; };
 		EBBBA802293DDB5000211CCF /* KEkeyMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyMainVC.swift; sourceTree = "<group>"; };
 		EBBBA805293DFB9700211CCF /* KEkeyNeTransformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeTransformVC.swift; sourceTree = "<group>"; };
 		EBE60E2029447A3B004DF203 /* KEkeyNeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEkeyNeSettingVC.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				EB2D5FB1296EBD0600C9DFA3 /* KeyBoardTopBar.swift */,
 				EB2D5FB3296EBD3E00C9DFA3 /* KeyBoardContentPreview.swift */,
 				EB2D5FB5296EC76A00C9DFA3 /* KeyBoardManager.swift */,
+				EBB350022977DC9000D7D1DC /* globe_ic.png */,
 				EB2D5FAA296EBCB500C9DFA3 /* Info.plist */,
 			);
 			path = KiKeyBoardCus;
@@ -445,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB350032977DC9000D7D1DC /* globe_ic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,7 +828,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -857,7 +861,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "KIkbsKeyBoard/KIkbsKeyBoard-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

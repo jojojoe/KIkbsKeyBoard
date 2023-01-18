@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>KIKeykbsKeyBoard</string>
+			<string>KiKeyBoardCus</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>KIKeykbsKeyBoard</string>
+				<string>KiKeyBoardCus</string>
 			</array>
 		</dict>
 	</array>
